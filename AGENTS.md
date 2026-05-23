@@ -40,6 +40,7 @@ Python comum, sem Sage.
 ## Arquivos gerados
 
 - `final_proof_sequence/`: sequencia final alinhada ao Stage 16.
+- `final_geometric_variations/`: variacoes visuais da mesma familia Stage 16.
 - `final_small_cm/`: exemplo pequeno didatico.
 - `best_leq32_search/` e `best_leq32_search_wide/`: busca booleana-ciclotomica
   para ate 32 pontos.
@@ -72,4 +73,3 @@ CSV, PNG, PDF, SVG e ZIP estao sob Git LFS via `.gitattributes`.
 git diff --check
 git status --short
 ```
-

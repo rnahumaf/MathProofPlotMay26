@@ -38,6 +38,7 @@ excecao: ele precisa apenas de Python comum com `numpy` e `Pillow`.
 | Grafico final pequeno | `build_final_small_cm_plot.py`, `final_small_cm/` | Figura explicativa compacta com 32 pontos usando raizes da unidade em `Q(zeta_24)` como translacoes exatas de norma 1. |
 | Busca <= 32 | `search_best_leq32_unit_graph.py`, `best_leq32_search/` | Exercicio computacional: busca, dentro da familia booleana-ciclotomica, configuracoes com ate 32 pontos e muitas distancias unitarias. |
 | Sequencia final | `build_final_proof_sequence.py`, `final_proof_sequence/` | Galeria final alinhada ao Stage 16: primos split, fibras de classe, razoes principais, translacoes de norma 1, corte por polidisco e projecao. |
+| Variacoes geometricas | `build_final_geometric_variations.py`, `final_geometric_variations/` | Organizacoes visuais distintas dentro da mesma familia Stage 16: espalhamento angular, corte apertado, setor angular, baixa distorcao e amostra aleatoria controlada. |
 
 ## Grafico final pequeno
 
@@ -119,6 +120,30 @@ Essa pasta contem uma sequencia crescente:
 
 O passo `04` e o mais equilibrado visualmente. O passo `06` e o melhor
 quantitativamente e representa a melhor amostra finita Stage 16 nesta pasta.
+
+## Variacoes geometricas finais
+
+Para mostrar que a mesma construcao aritmetica pode produzir organizacoes
+visuais distintas, use:
+
+```bash
+source ~/miniforge3/etc/profile.d/conda.sh
+conda activate sage
+python build_final_geometric_variations.py
+```
+
+Saidas:
+
+- `final_geometric_variations/01_angular_spread_balanced.png`
+- `final_geometric_variations/02_angular_spread_tight_cut.png`
+- `final_geometric_variations/03_sector_cluster.png`
+- `final_geometric_variations/04_low_hidden_distortion.png`
+- `final_geometric_variations/05_random_representative.png`
+- `final_geometric_variations/06_dense_angular_spread.png`
+
+Todas preservam o mesmo nucleo: `Q(zeta_24)`, primos split `73 97 193`, fibra
+de classe, razoes principais, translacoes `u = alpha/c(alpha)` de norma
+relativa 1, corte por polidisco e projecao complexa.
 
 ## Exercicio: melhor grafico pequeno encontrado
 

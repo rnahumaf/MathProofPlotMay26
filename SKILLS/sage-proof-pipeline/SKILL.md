@@ -42,6 +42,13 @@ ultimo resultado conhecido:
 - passo `04`: melhor equilibrio visual;
 - passo `06`: melhor quantitativo, com 15.844 pontos e 108.216 pares unitarios.
 
+`final_geometric_variations/manifest.csv` deve conter variacoes visuais com o
+mesmo nucleo aritmetico. Gere com:
+
+```bash
+python build_final_geometric_variations.py
+```
+
 ## Gotchas
 
 - Nao rode scripts Sage diretamente no PowerShell.
@@ -51,4 +58,3 @@ ultimo resultado conhecido:
   `README.md` ou em `final_proof_sequence/README.md`.
 - A contagem de pares depende de tolerancias numericas na projecao; preserve a
   diferenca entre verificacao algebraica no Sage e visualizacao plana.
-
