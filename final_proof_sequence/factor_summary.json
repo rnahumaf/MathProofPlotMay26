@@ -1,0 +1,20 @@
+[
+  {
+    "m": 24,
+    "p": 73,
+    "prime_ideal_count": 8,
+    "conjugate_pair_count": 4
+  },
+  {
+    "m": 24,
+    "p": 97,
+    "prime_ideal_count": 8,
+    "conjugate_pair_count": 4
+  },
+  {
+    "m": 24,
+    "p": 193,
+    "prime_ideal_count": 8,
+    "conjugate_pair_count": 4
+  }
+]

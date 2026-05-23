@@ -1,0 +1,11 @@
+# Python/cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local external repos used only for review/comparison
+_external_review/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
