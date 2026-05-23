@@ -45,11 +45,12 @@ SPLIT_PRIME_COUNT = 3
 MAX_IDEAL_CHOICES = 300000
 MAX_PLOT_EDGES = 36000
 
-BLUEPRINT_BG = "#f5f8fc"
+BLUEPRINT_BG = "#f8fafc"
 BLUEPRINT_LINE = (37, 99, 235)
-BLUEPRINT_POINT = "#0f172a"
 BLUEPRINT_TEXT = "#111827"
 BLUEPRINT_MUTED = "#64748b"
+POINT_STEEL_LO = "#334155"
+POINT_STEEL_HI = "#020617"
 
 
 @dataclass(frozen=True)
@@ -207,6 +208,16 @@ def sampled_edges(edge_rows: list[dict], limit: int) -> list[dict]:
     return [edge_rows[int(i)] for i in idx]
 
 
+def hex_to_rgb(value: str) -> tuple[int, int, int]:
+    value = value.lstrip("#")
+    return tuple(int(value[i : i + 2], 16) for i in (0, 2, 4))
+
+
+def mix_rgb(a: tuple[int, int, int], b: tuple[int, int, int], t: float) -> tuple[int, int, int]:
+    t = max(0.0, min(1.0, t))
+    return tuple(int(round(x + (y - x) * t)) for x, y in zip(a, b))
+
+
 def draw_blueprint(path: Path, point_rows: list[dict], edge_rows: list[dict], summary: dict, spec: BlueprintSpec) -> None:
     width, height = 1800, 1400
     image = Image.new("RGB", (width, height), BLUEPRINT_BG)
@@ -230,8 +241,8 @@ def draw_blueprint(path: Path, point_rows: list[dict], edge_rows: list[dict], su
                 project(float(edge["x1"]), float(edge["y1"])),
                 project(float(edge["x2"]), float(edge["y2"])),
             ],
-            fill=(*BLUEPRINT_LINE, 28),
-            width=4,
+            fill=(*BLUEPRINT_LINE, 31),
+            width=1,
         )
     for edge in edge_sample:
         draw.line(
@@ -239,15 +250,24 @@ def draw_blueprint(path: Path, point_rows: list[dict], edge_rows: list[dict], su
                 project(float(edge["x1"]), float(edge["y1"])),
                 project(float(edge["x2"]), float(edge["y2"])),
             ],
-            fill=(*BLUEPRINT_LINE, 38),
-            width=1,
+            fill=(*BLUEPRINT_LINE, 56),
+            width=3,
         )
 
     n = int(summary["distinct_points"])
     radius = 4 if n <= 300 else 3 if n <= 2500 else 2
-    for x, y in arr:
-        px, py = project(float(x), float(y))
-        draw.ellipse((px - radius, py - radius, px + radius, py + radius), fill=BLUEPRINT_POINT)
+    values = [float(row["max_embedding_abs"]) for row in point_rows]
+    lo = min(values)
+    span = max(max(values) - lo, 1e-9)
+    steel_lo = hex_to_rgb(POINT_STEEL_LO)
+    steel_hi = hex_to_rgb(POINT_STEEL_HI)
+    for row in point_rows:
+        px, py = project(float(row["x"]), float(row["y"]))
+        t = (float(row["max_embedding_abs"]) - lo) / span
+        draw.ellipse(
+            (px - radius, py - radius, px + radius, py + radius),
+            fill=(*mix_rgb(steel_lo, steel_hi, t), 230),
+        )
 
     footer = (
         f"K=Q(zeta_{M}), split primes {summary['split_primes']}; "
