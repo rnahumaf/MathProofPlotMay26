@@ -14,6 +14,14 @@ Referencia: Will Sawin, *An explicit lower bound for the unit distance problem*,
 arXiv:2605.20579v1, 20 May 2026:
 https://arxiv.org/html/2605.20579v1
 
+## Orientacao para agentes e manutencao
+
+- `GUIDELINES.html`: copia local das guidelines gerais usadas em outros
+  repositorios para agentes, skills, documentacao e interfaces.
+- `AGENTS.md`: contrato operacional especifico deste repositorio.
+- `SKILLS/`: memoria curta e acionavel para gotchas e fluxos recorrentes,
+  incluindo Sage/WSL, busca pequena `n <= 32` e Git/LFS.
+
 ## Evolucao das tentativas
 
 A maior parte dos scripts de estagio foi escrita para SageMath e deve ser
