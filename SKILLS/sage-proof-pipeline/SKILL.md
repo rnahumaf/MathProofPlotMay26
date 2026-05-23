@@ -49,6 +49,22 @@ mesmo nucleo aritmetico. Gere com:
 python build_final_geometric_variations.py
 ```
 
+`final_blueprint_symmetric_variations/manifest.csv` e a galeria visual padrao.
+Ela deve preservar o estilo Blueprint e conter apenas variacoes simetricas da
+familia Stage 16. Gere com:
+
+```bash
+python build_blueprint_symmetric_gallery.py
+```
+
+`symmetric_variation_search/manifest.csv` deve conter buscas de alta simetria
+visual, selecionando direcoes quase regularmente espacadas modulo `pi`. Gere
+com:
+
+```bash
+python build_symmetric_variation_search.py
+```
+
 ## Gotchas
 
 - Nao rode scripts Sage diretamente no PowerShell.

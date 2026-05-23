@@ -39,6 +39,9 @@ excecao: ele precisa apenas de Python comum com `numpy` e `Pillow`.
 | Busca <= 32 | `search_best_leq32_unit_graph.py`, `best_leq32_search/` | Exercicio computacional: busca, dentro da familia booleana-ciclotomica, configuracoes com ate 32 pontos e muitas distancias unitarias. |
 | Sequencia final | `build_final_proof_sequence.py`, `final_proof_sequence/` | Galeria final alinhada ao Stage 16: primos split, fibras de classe, razoes principais, translacoes de norma 1, corte por polidisco e projecao. |
 | Variacoes geometricas | `build_final_geometric_variations.py`, `final_geometric_variations/` | Organizacoes visuais distintas dentro da mesma familia Stage 16: espalhamento angular, corte apertado, setor angular, baixa distorcao e amostra aleatoria controlada. |
+| Busca simetrica | `build_symmetric_variation_search.py`, `symmetric_variation_search/` | Busca variacoes Stage 16 com direcoes quase regularmente espacadas modulo `pi`, favorecendo malhas radiais/dihedrais de alto impacto visual. |
+| Galeria Blueprint simetrica | `build_blueprint_symmetric_gallery.py`, `final_blueprint_symmetric_variations/` | Colecao final em estilo Blueprint, com variacoes simetricas de forma, numero de pontos, raio do polidisco e quantidade de translacoes. |
+| Styler interativo | `interactive_graph_styler/index.html` | Interface em canvas para filtrar/carregar datasets, ajustar background, largura/alpha/densidade de linhas, tamanho/cor/alpha de pontos e exportar PNG. |
 
 ## Grafico final pequeno
 
@@ -144,6 +147,111 @@ Saidas:
 Todas preservam o mesmo nucleo: `Q(zeta_24)`, primos split `73 97 193`, fibra
 de classe, razoes principais, translacoes `u = alpha/c(alpha)` de norma
 relativa 1, corte por polidisco e projecao complexa.
+
+## Busca por simetria visual
+
+Para procurar malhas com maior impacto visual por simetria angular:
+
+```bash
+source ~/miniforge3/etc/profile.d/conda.sh
+conda activate sage
+python build_symmetric_variation_search.py
+```
+
+Saidas:
+
+- `symmetric_variation_search/manifest.csv`
+- `symmetric_variation_search/01_regular6_phase_opt.png`
+- `symmetric_variation_search/02_regular8_phase_opt.png`
+- `symmetric_variation_search/03_regular10_phase_opt.png`
+- `symmetric_variation_search/04_regular10_axis_locked.png`
+- `symmetric_variation_search/05_regular10_tight_cut.png`
+- `symmetric_variation_search/06_regular10_low_hidden.png`
+- `symmetric_variation_search/07_regular12_phase_opt.png`
+- `symmetric_variation_search/08_regular12_low_hidden.png`
+
+Essa busca compara as direcoes das translacoes modulo `pi` contra alvos
+angulares regulares. A variante `03_regular10_phase_opt` e uma boa candidata
+equilibrada; `07_regular12_phase_opt` e mais densa e quantitativamente mais
+forte.
+
+## Galeria Blueprint simetrica
+
+A referencia visual principal do projeto passa a ser:
+
+```bash
+source ~/miniforge3/etc/profile.d/conda.sh
+conda activate sage
+python build_blueprint_symmetric_gallery.py
+```
+
+Saidas:
+
+- `final_blueprint_symmetric_variations/01_regular6_open.png`
+- `final_blueprint_symmetric_variations/02_regular8_open.png`
+- `final_blueprint_symmetric_variations/03_regular10_compact.png`
+- `final_blueprint_symmetric_variations/04_regular10_balanced.png`
+- `final_blueprint_symmetric_variations/05_regular10_axis_locked.png`
+- `final_blueprint_symmetric_variations/06_regular10_low_hidden.png`
+- `final_blueprint_symmetric_variations/07_regular11_balanced.png`
+- `final_blueprint_symmetric_variations/08_regular12_compact.png`
+- `final_blueprint_symmetric_variations/09_regular12_balanced.png`
+
+Todas usam o mesmo nucleo matematico Stage 16: `K = Q(zeta_24)`, primos split
+`73 97 193`, fibra de classe com `4096` escolhas, translacoes
+`u = alpha/c(alpha)` de norma relativa 1, corte por polidisco de Minkowski e
+projecao para uma coordenada complexa. O que muda entre elas e permitido pela
+propria construcao finita: quantidade de translacoes, simetria angular alvo,
+raio do corte e penalidade leve nas outras imersoes.
+
+Resumo da galeria atual:
+
+| Variacao | Pontos | Pares unitarios | Uso visual |
+| --- | ---: | ---: | --- |
+| `01_regular6_open` | 64 | 192 | explicacao pequena |
+| `02_regular8_open` | 256 | 1.024 | transicao compacta |
+| `03_regular10_compact` | 936 | 4.360 | malha decagonal apertada |
+| `04_regular10_balanced` | 1.024 | 5.120 | padrao recomendado |
+| `05_regular10_axis_locked` | 1.020 | 5.080 | composicao alinhada ao eixo |
+| `06_regular10_low_hidden` | 1.022 | 5.100 | baixa distorcao oculta |
+| `07_regular11_balanced` | 2.044 | 11.220 | densidade intermediaria |
+| `08_regular12_compact` | 3.418 | 18.264 | dodecagonal compacta |
+| `09_regular12_balanced` | 4.050 | 24.082 | dodecagonal densa |
+
+O preset Blueprint tambem e o padrao no app interativo. Use
+`04_regular10_balanced` como primeira candidata para apresentacao, e depois
+compare com `05`, `06` e `09` para escolher a organizacao visual.
+
+## Styler interativo
+
+Para ajustar visualmente as figuras sem rerodar Sage, abra:
+
+```text
+interactive_graph_styler/index.html
+```
+
+Se o navegador bloquear arquivos locais, sirva a raiz do repositorio:
+
+```powershell
+python -m http.server 8765 --bind 127.0.0.1
+```
+
+Depois acesse:
+
+```text
+http://127.0.0.1:8765/interactive_graph_styler/index.html
+```
+
+O snapshot de dados fica em `interactive_graph_styler/graph_data.js` e inclui
+datasets de `final_blueprint_symmetric_variations/`,
+`final_geometric_variations/` e `symmetric_variation_search/`. A interface
+tambem aceita carga manual de `points.csv` e `edges.csv`.
+
+Para regenera-lo depois de atualizar as pastas de datasets:
+
+```powershell
+python .\interactive_graph_styler\build_data.py
+```
 
 ## Exercicio: melhor grafico pequeno encontrado
 

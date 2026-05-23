@@ -651,6 +651,7 @@
               <li>Defina sucesso antes de implementar quando a tarefa tiver risco ou vários passos.</li>
               <li>Use o menor teste suficiente para a mudança.</li>
               <li>Não faça validação visual, screenshots ou inspeção de UI renderizada após implementações, salvo pedido explícito do usuário; isso gasta muitos tokens e costuma ser ineficiente.</li>
+              <li>Não abra arquivos de imagem ou SVG sem autorização explícita do usuário. Esses arquivos podem ser muito grandes e consumir contexto rapidamente; inspeções visuais costumam ser feitas com mais eficiência pelo usuário.</li>
               <li>Rode build completo quando tocar configuração, assets compartilhados, dados gerados ou muitas páginas.</li>
               <li>Confira diffs após comandos geradores para separar mudanças intencionais de efeitos colaterais.</li>
               <li>Declare qualquer verificação que ficou pendente.</li>

@@ -40,6 +40,8 @@ Python comum, sem Sage.
 ## Arquivos gerados
 
 - `final_proof_sequence/`: sequencia final alinhada ao Stage 16.
+- `final_blueprint_symmetric_variations/`: galeria final padrao em estilo
+  Blueprint, com variacoes simetricas da construcao Stage 16.
 - `final_geometric_variations/`: variacoes visuais da mesma familia Stage 16.
 - `final_small_cm/`: exemplo pequeno didatico.
 - `best_leq32_search/` e `best_leq32_search_wide/`: busca booleana-ciclotomica

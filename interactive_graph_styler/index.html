@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blueprint Unit-Distance Graph Styler</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="control-panel" aria-label="Controles do gráfico">
+        <div class="panel-header">
+          <h1>Blueprint Styler</h1>
+          <p>Stage 16 CM unit-distance datasets</p>
+        </div>
+
+        <section class="control-section">
+          <h2>Dataset</h2>
+          <label class="field">
+            <span>Fonte</span>
+            <select id="sourceSelect">
+              <option value="all">All embedded datasets</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Seletor</span>
+            <select id="datasetSelect"></select>
+          </label>
+          <div class="stats" id="datasetStats"></div>
+        </section>
+
+        <section class="control-section">
+          <h2>Load CSV</h2>
+          <label class="field file-field">
+            <span>Points CSV</span>
+            <input id="pointsFile" type="file" accept=".csv,text/csv" />
+          </label>
+          <label class="field file-field">
+            <span>Edges CSV</span>
+            <input id="edgesFile" type="file" accept=".csv,text/csv" />
+          </label>
+          <button type="button" id="loadCsvDataset">Load selected CSVs</button>
+          <p id="loadStatus" class="load-status">Use columns: id, x, y, max_embedding_abs; from_id, to_id, changed_generator.</p>
+        </section>
+
+        <section class="control-section">
+          <h2>Preset</h2>
+          <div class="button-grid">
+            <button type="button" data-preset="blueprint">Blueprint</button>
+            <button type="button" data-preset="generator">Generator</button>
+            <button type="button" data-preset="print">Print</button>
+            <button type="button" data-preset="dark">Dark</button>
+          </div>
+        </section>
+
+        <section class="control-section">
+          <h2>Canvas</h2>
+          <div class="color-group">
+            <div class="color-head">
+              <span>Background color</span>
+              <span id="backgroundSwatch" class="swatch"></span>
+            </div>
+            <label class="range-field">
+              <span>Hue <output id="backgroundHueOut"></output></span>
+              <input id="backgroundHue" type="range" min="0" max="360" step="1" value="210" />
+            </label>
+            <label class="range-field">
+              <span>Saturation <output id="backgroundSaturationOut"></output></span>
+              <input id="backgroundSaturation" type="range" min="0" max="100" step="1" value="33" />
+            </label>
+            <label class="range-field">
+              <span>Lightness <output id="backgroundLightnessOut"></output></span>
+              <input id="backgroundLightness" type="range" min="0" max="100" step="1" value="98" />
+            </label>
+            <label class="range-field">
+              <span>Black intensity <output id="backgroundBlackOut"></output></span>
+              <input id="backgroundBlack" type="range" min="0" max="100" step="1" value="0" />
+            </label>
+          </div>
+          <label class="field inline">
+            <span>Escala export</span>
+            <select id="exportScale">
+              <option value="1">1x</option>
+              <option value="2" selected>2x</option>
+              <option value="3">3x</option>
+              <option value="4">4x</option>
+            </select>
+          </label>
+        </section>
+
+        <section class="control-section">
+          <h2>Lines</h2>
+          <label class="field">
+            <span>Palette</span>
+            <select id="lineMode">
+              <option value="custom">Custom HSL</option>
+              <option value="generator">Generator colors</option>
+              <option value="blueprint">Blueprint</option>
+              <option value="charcoal">Charcoal</option>
+              <option value="warmCool">Warm / cool</option>
+              <option value="sage">Sage</option>
+              <option value="mist">Mist</option>
+              <option value="neon">Neon</option>
+            </select>
+          </label>
+          <div class="color-group">
+            <div class="color-head">
+              <span>Line custom color</span>
+              <span id="lineSwatch" class="swatch"></span>
+            </div>
+            <label class="range-field">
+              <span>Hue <output id="lineHueOut"></output></span>
+              <input id="lineHue" type="range" min="0" max="360" step="1" value="217" />
+            </label>
+            <label class="range-field">
+              <span>Saturation <output id="lineSaturationOut"></output></span>
+              <input id="lineSaturation" type="range" min="0" max="100" step="1" value="91" />
+            </label>
+            <label class="range-field">
+              <span>Lightness <output id="lineLightnessOut"></output></span>
+              <input id="lineLightness" type="range" min="0" max="100" step="1" value="60" />
+            </label>
+            <label class="range-field">
+              <span>Black intensity <output id="lineBlackOut"></output></span>
+              <input id="lineBlack" type="range" min="0" max="100" step="1" value="0" />
+            </label>
+          </div>
+          <label class="range-field">
+            <span>Width <output id="lineWidthOut"></output></span>
+            <input id="lineWidth" type="range" min="0.2" max="4" step="0.1" value="1" />
+          </label>
+          <label class="range-field">
+            <span>Alpha <output id="lineAlphaOut"></output></span>
+            <input id="lineAlpha" type="range" min="0" max="1" step="0.01" value="0.14" />
+          </label>
+          <label class="check-field">
+            <input id="densityEnabled" type="checkbox" checked />
+            <span>Density enhancement</span>
+          </label>
+          <label class="range-field">
+            <span>Density width <output id="densityWidthOut"></output></span>
+            <input id="densityWidth" type="range" min="0" max="8" step="0.5" value="3" />
+          </label>
+          <label class="range-field">
+            <span>Density alpha <output id="densityAlphaOut"></output></span>
+            <input id="densityAlpha" type="range" min="0" max="1" step="0.01" value="0.22" />
+          </label>
+        </section>
+
+        <section class="control-section">
+          <h2>Points</h2>
+          <label class="field">
+            <span>Color</span>
+            <select id="pointMode">
+              <option value="custom">Custom HSL</option>
+              <option value="ink">Ink</option>
+              <option value="steel">Steel</option>
+              <option value="topographic">Topographic</option>
+              <option value="coolWarm">Cool / warm</option>
+              <option value="neon">Neon</option>
+              <option value="violet">Violet</option>
+            </select>
+          </label>
+          <div class="color-group">
+            <div class="color-head">
+              <span>Point custom color</span>
+              <span id="pointSwatch" class="swatch"></span>
+            </div>
+            <label class="range-field">
+              <span>Hue <output id="pointHueOut"></output></span>
+              <input id="pointHue" type="range" min="0" max="360" step="1" value="222" />
+            </label>
+            <label class="range-field">
+              <span>Saturation <output id="pointSaturationOut"></output></span>
+              <input id="pointSaturation" type="range" min="0" max="100" step="1" value="47" />
+            </label>
+            <label class="range-field">
+              <span>Lightness <output id="pointLightnessOut"></output></span>
+              <input id="pointLightness" type="range" min="0" max="100" step="1" value="11" />
+            </label>
+            <label class="range-field">
+              <span>Black intensity <output id="pointBlackOut"></output></span>
+              <input id="pointBlack" type="range" min="0" max="100" step="1" value="0" />
+            </label>
+          </div>
+          <label class="range-field">
+            <span>Size <output id="pointSizeOut"></output></span>
+            <input id="pointSize" type="range" min="0.5" max="8" step="0.25" value="3" />
+          </label>
+          <label class="range-field">
+            <span>Alpha <output id="pointAlphaOut"></output></span>
+            <input id="pointAlpha" type="range" min="0" max="1" step="0.01" value="0.92" />
+          </label>
+        </section>
+
+        <section class="control-section">
+          <h2>Layers</h2>
+          <label class="check-field">
+            <input id="showLines" type="checkbox" checked />
+            <span>Show lines</span>
+          </label>
+          <label class="check-field">
+            <input id="showPoints" type="checkbox" checked />
+            <span>Show points</span>
+          </label>
+          <label class="check-field">
+            <input id="showLabels" type="checkbox" checked />
+            <span>Show labels</span>
+          </label>
+        </section>
+
+        <div class="panel-actions">
+          <button type="button" id="downloadPng" class="primary">Download PNG</button>
+          <button type="button" id="resetView">Reset view</button>
+        </div>
+      </aside>
+
+      <section class="canvas-stage">
+        <div class="stage-toolbar">
+          <div>
+            <strong id="activeTitle">Graph</strong>
+            <span id="activeSubtitle"></span>
+          </div>
+          <span id="renderInfo"></span>
+        </div>
+        <canvas id="graphCanvas" width="1800" height="1400"></canvas>
+      </section>
+    </main>
+
+    <script src="graph_data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
