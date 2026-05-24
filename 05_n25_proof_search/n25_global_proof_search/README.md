@@ -897,7 +897,7 @@ Exact triangle-lattice filter:
 
 ```powershell
 python .\n25_global_proof_search\triangle_lattice_filter.py --classes 600 --max-nodes 200000
-python .\n25_global_proof_search\triangle_lattice_filter.py --edges .\uccs_square_stat_runs\n25_e70_seed20270530_edges.csv
+python .\n25_global_proof_search\triangle_lattice_filter.py --edges ..\03_uccs_exploration\uccs_square_stat_runs\n25_e70_seed20270530_edges.csv
 ```
 
 Triangle-filtered search:
@@ -912,7 +912,7 @@ Finite trilateration:
 
 ```powershell
 python .\n25_global_proof_search\trilateration_eliminator.py --pool .\n25_global_proof_search\triangle_filtered_pool --classes 500 --max-states 200000 --precision 100 --tolerance 1e-40
-python .\n25_global_proof_search\trilateration_eliminator.py --edges .\uccs_square_stat_runs\n25_e70_seed20270530_edges.csv
+python .\n25_global_proof_search\trilateration_eliminator.py --edges ..\03_uccs_exploration\uccs_square_stat_runs\n25_e70_seed20270530_edges.csv
 ```
 
 Certificate verification:

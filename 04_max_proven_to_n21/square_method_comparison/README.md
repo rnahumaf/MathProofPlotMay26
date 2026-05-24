@@ -18,7 +18,8 @@ mostra `±1` desvio padrao. A tabela tambem preserva o melhor valor conhecido.
 - **Erdos classico**: melhor distancia repetida em uma grade retangular com
   `n` pontos, depois reescalada para distancia 1.
 - **UCCS**: Unit-Circle Closure Search, a sua busca por fecho de intersecoes de
-  circulos unitarios. Quando `uccs_square_stat_runs/restart_summary_results.csv`
+  circulos unitarios. Quando
+  `../03_uccs_exploration/uccs_square_stat_runs/restart_summary_results.csv`
   existe, a sombra usa o desvio padrao dos melhores resultados por restart
   interno. Isso e diferente da trilha monotona de mensagens `novo melhor`.
 - **Maximo provado**: valor exato conhecido. Entre os quadrados desta tabela,

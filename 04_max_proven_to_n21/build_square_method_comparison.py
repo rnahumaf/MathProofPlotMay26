@@ -9,7 +9,11 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 
-OUTDIR = Path("square_method_comparison")
+BASE_DIR = Path(__file__).resolve().parent
+REPO_ROOT = BASE_DIR.parent
+OUTDIR = BASE_DIR / "square_method_comparison"
+UCCS_RESULTS_PATH = REPO_ROOT / "03_uccs_exploration" / "uccs_square_stat_runs" / "restart_summary_results.csv"
+OPENAI_RESULTS_PATH = REPO_ROOT / "01_openai_theorem_exploration" / "openai_square_exact_runs" / "summary_results.csv"
 
 BLUEPRINT_BG = "#f8fafc"
 BLUEPRINT_GRID = "#dbeafe"
@@ -109,7 +113,7 @@ def read_uccs_stats() -> dict[int, dict]:
         }
         for item in UCCS_RESULTS
     }
-    path = Path("uccs_square_stat_runs") / "restart_summary_results.csv"
+    path = UCCS_RESULTS_PATH
     if not path.exists():
         return values
     with path.open("r", encoding="utf-8", newline="") as handle:
@@ -132,7 +136,7 @@ def read_uccs_stats() -> dict[int, dict]:
 
 def read_openai_exact_runs() -> dict[int, dict]:
     values = dict(OPENAI_LOCAL)
-    path = Path("openai_square_exact_runs") / "summary_results.csv"
+    path = OPENAI_RESULTS_PATH
     if not path.exists():
         return values
     with path.open("r", encoding="utf-8", newline="") as handle:
@@ -330,7 +334,8 @@ mostra `±1` desvio padrao. A tabela tambem preserva o melhor valor conhecido.
 - **Erdos classico**: melhor distancia repetida em uma grade retangular com
   `n` pontos, depois reescalada para distancia 1.
 - **UCCS**: Unit-Circle Closure Search, a sua busca por fecho de intersecoes de
-  circulos unitarios. Quando `uccs_square_stat_runs/restart_summary_results.csv`
+  circulos unitarios. Quando
+  `../03_uccs_exploration/uccs_square_stat_runs/restart_summary_results.csv`
   existe, a sombra usa o desvio padrao dos melhores resultados por restart
   interno. Isso e diferente da trilha monotona de mensagens `novo melhor`.
 - **Maximo provado**: valor exato conhecido. Entre os quadrados desta tabela,

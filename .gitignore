@@ -8,18 +8,23 @@ __pycache__/
 _external_review/
 tmp_repo_audit/
 
+# Local agent/operator files
+AGENTS.md
+GUIDELINES.html
+SKILLS/
+
 # OS/editor noise
 .DS_Store
 Thumbs.db
 
 # Proof-search generated bulk outputs
-n25_global_proof_search/**/*_runs.csv
-n25_global_proof_search/**/*_coords.csv
-n25_global_proof_search/**/*_distance_table.csv
-n25_global_proof_search/**/*_pair_distances.csv
-n25_global_proof_search/**/*_edge_residuals.csv
-n25_global_proof_search/**/*_target_edges.csv
-n25_global_proof_search/**/*_details.json
+05_n25_proof_search/n25_global_proof_search/**/*_runs.csv
+05_n25_proof_search/n25_global_proof_search/**/*_coords.csv
+05_n25_proof_search/n25_global_proof_search/**/*_distance_table.csv
+05_n25_proof_search/n25_global_proof_search/**/*_pair_distances.csv
+05_n25_proof_search/n25_global_proof_search/**/*_edge_residuals.csv
+05_n25_proof_search/n25_global_proof_search/**/*_target_edges.csv
+05_n25_proof_search/n25_global_proof_search/**/*_details.json
 
 # Per-case generated folders
-n25_global_proof_search/**/case_*/
+05_n25_proof_search/n25_global_proof_search/**/case_*/

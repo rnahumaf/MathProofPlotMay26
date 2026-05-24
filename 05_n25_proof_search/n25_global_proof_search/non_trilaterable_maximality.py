@@ -27,7 +27,7 @@ from trilateration_eliminator import adjacency, choose_order
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTDIR = ROOT / "n25_global_proof_search" / "non_trilaterable_maximality"
-DEFAULT_BASE = ROOT / "uccs_square_stat_runs" / "n25_e70_seed20270530_edges.csv"
+DEFAULT_BASE = ROOT.parent / "03_uccs_exploration" / "uccs_square_stat_runs" / "n25_e70_seed20270530_edges.csv"
 
 
 def default_worker_count() -> int:

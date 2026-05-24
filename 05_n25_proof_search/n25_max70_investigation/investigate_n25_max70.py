@@ -45,8 +45,9 @@ from scipy.sparse import lil_matrix
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTDIR = ROOT / "n25_max70_investigation"
-SOURCE_POINTS = ROOT / "uccs_square_stat_runs" / "n25_e70_seed20270530_points.csv"
-SOURCE_EDGES = ROOT / "uccs_square_stat_runs" / "n25_e70_seed20270530_edges.csv"
+UCCS_DIR = ROOT.parent / "03_uccs_exploration"
+SOURCE_POINTS = UCCS_DIR / "uccs_square_stat_runs" / "n25_e70_seed20270530_points.csv"
+SOURCE_EDGES = UCCS_DIR / "uccs_square_stat_runs" / "n25_e70_seed20270530_edges.csv"
 
 
 def default_worker_count() -> int:
@@ -179,7 +180,7 @@ def write_exact_lower_bound_certificate() -> dict:
 
 
 def build_uccs_candidate_graph(top_candidates: int, bounds_padding: float) -> tuple[list[tuple[float, float]], list[tuple[int, int]]]:
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(UCCS_DIR))
     import uccs_interactive_runner_v3_resilient as uccs
 
     seed = uccs.base_seed_for_n(25)
@@ -312,7 +313,7 @@ def write_finite_uccs_upper_bound(
 
 def counterexample_search_one(task: tuple[int, int, int, float, int]) -> dict:
     top_candidates, restarts, steps, bounds_padding, local_seed = task
-    sys.path.insert(0, str(ROOT))
+    sys.path.insert(0, str(UCCS_DIR))
     import uccs_interactive_runner_v3_resilient as uccs
 
     start = time.time()
