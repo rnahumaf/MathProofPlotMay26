@@ -1,0 +1,56 @@
+{
+  "source_edges": "n25_global_proof_search\\subcore_021_removed_edge_structure_audit\\subcore_021_without_3_12_edges.csv",
+  "edge_count": 24,
+  "target_pair": [
+    3,
+    12
+  ],
+  "candidate_partition_count": 80100,
+  "status_counts": {
+    "loop": 12004,
+    "forced_sqrt3_by_opposite_relation": 56652,
+    "already_unit_edge_in_quotient": 7389,
+    "unresolved": 4055
+  },
+  "size_counts": {
+    "qV=3,qE=3": 1,
+    "qV=4,qE=5": 21,
+    "qV=4,qE=6": 366,
+    "qV=5,qE=7": 92,
+    "qV=5,qE=8": 1110,
+    "qV=5,qE=9": 2992,
+    "qV=5,qE=10": 2388,
+    "qV=6,qE=9": 110,
+    "qV=6,qE=10": 1221,
+    "qV=6,qE=11": 4977,
+    "qV=6,qE=12": 8821,
+    "qV=6,qE=13": 6746,
+    "qV=6,qE=14": 2084,
+    "qV=6,qE=15": 239,
+    "qV=7,qE=11": 47,
+    "qV=7,qE=12": 618,
+    "qV=7,qE=13": 3197,
+    "qV=7,qE=14": 8144,
+    "qV=7,qE=15": 10409,
+    "qV=7,qE=16": 6524,
+    "qV=7,qE=17": 2028,
+    "qV=7,qE=18": 293,
+    "qV=7,qE=19": 15,
+    "qV=7,qE=20": 1,
+    "qV=8,qE=13": 6,
+    "qV=8,qE=14": 157,
+    "qV=8,qE=15": 1030,
+    "qV=8,qE=16": 3461,
+    "qV=8,qE=17": 5982,
+    "qV=8,qE=18": 4798,
+    "qV=8,qE=19": 1859,
+    "qV=8,qE=20": 327,
+    "qV=8,qE=21": 35,
+    "qV=8,qE=22": 1
+  },
+  "observed_found": {
+    "d2_0": true,
+    "d2_3": true
+  },
+  "interpretation": "This is a combinatorial enumeration of collision partitions whose blocks are independent sets of the 24-edge core. Partitions with target_status 'loop' or 'forced_sqrt3_by_opposite_relation' are immediately incompatible with reinserting the target edge 3-12 as a unit edge. 'unresolved' partitions need geometric filtering."
+}

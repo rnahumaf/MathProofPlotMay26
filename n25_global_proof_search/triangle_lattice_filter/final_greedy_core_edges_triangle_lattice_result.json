@@ -1,0 +1,53 @@
+{
+  "class_id": "final_greedy_core_edges",
+  "edge_count": 18,
+  "triangle_count": 5,
+  "triangle_component_count": 4,
+  "largest_component_vertices": 4,
+  "eliminated": false,
+  "failure_component": "",
+  "failure_reason": "",
+  "search_nodes": 5,
+  "components": [
+    {
+      "component_index": 1,
+      "triangle_count": 2,
+      "vertex_count": 4,
+      "internal_edge_count": 5,
+      "satisfiable": true,
+      "assigned_vertex_count": 4,
+      "search_nodes": 2,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 2,
+      "triangle_count": 1,
+      "vertex_count": 3,
+      "internal_edge_count": 3,
+      "satisfiable": true,
+      "assigned_vertex_count": 3,
+      "search_nodes": 1,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 3,
+      "triangle_count": 1,
+      "vertex_count": 3,
+      "internal_edge_count": 3,
+      "satisfiable": true,
+      "assigned_vertex_count": 3,
+      "search_nodes": 1,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 4,
+      "triangle_count": 1,
+      "vertex_count": 3,
+      "internal_edge_count": 3,
+      "satisfiable": true,
+      "assigned_vertex_count": 3,
+      "search_nodes": 1,
+      "reason": "satisfied"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "source": "survivor_009_source_05399_edges",
+  "n": 11,
+  "edge_count": 23,
+  "label_count": 29,
+  "derived_label_count": 6,
+  "linear_label_count": 29,
+  "linear_derived_label_count": 6,
+  "eliminated": true,
+  "certificate": {
+    "type": "cayley_menger_nonzero",
+    "quad": [
+      2,
+      3,
+      5,
+      7
+    ],
+    "pair_order": [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        5,
+        7
+      ]
+    ],
+    "squared_distances": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "determinant": "4"
+  },
+  "derivations": [
+    {
+      "source_pair": [
+        3,
+        5
+      ],
+      "source_value": 1,
+      "target_pair": [
+        7,
+        10
+      ],
+      "target_value": 3,
+      "relation": [
+        3,
+        5,
+        7,
+        10
+      ]
+    },
+    {
+      "source_pair": [
+        4,
+        9
+      ],
+      "source_value": 1,
+      "target_pair": [
+        1,
+        5
+      ],
+      "target_value": 3,
+      "relation": [
+        4,
+        9,
+        1,
+        5
+      ]
+    },
+    {
+      "source_pair": [
+        5,
+        7
+      ],
+      "source_value": 1,
+      "target_pair": [
+        3,
+        6
+      ],
+      "target_value": 3,
+      "relation": [
+        5,
+        7,
+        3,
+        6
+      ]
+    },
+    {
+      "source_pair": [
+        1,
+        5
+      ],
+      "source_value": 3,
+      "target_pair": [
+        6,
+        9
+      ],
+      "target_value": 1,
+      "relation": [
+        6,
+        9,
+        1,
+        5
+      ]
+    },
+    {
+      "source_pair": [
+        3,
+        6
+      ],
+      "source_value": 3,
+      "target_pair": [
+        2,
+        5
+      ],
+      "target_value": 1,
+      "relation": [
+        2,
+        5,
+        3,
+        6
+      ]
+    },
+    {
+      "source_pair": [
+        3,
+        6
+      ],
+      "source_value": 3,
+      "target_pair": [
+        2,
+        7
+      ],
+      "target_value": 1,
+      "relation": [
+        2,
+        7,
+        3,
+        6
+      ]
+    }
+  ],
+  "linear_derivations": [
+    {
+      "pair": [
+        1,
+        5
+      ],
+      "squared_distance": "3",
+      "method": "linear_opposite_distance_system"
+    },
+    {
+      "pair": [
+        2,
+        5
+      ],
+      "squared_distance": "1",
+      "method": "linear_opposite_distance_system"
+    },
+    {
+      "pair": [
+        2,
+        7
+      ],
+      "squared_distance": "1",
+      "method": "linear_opposite_distance_system"
+    },
+    {
+      "pair": [
+        3,
+        6
+      ],
+      "squared_distance": "3",
+      "method": "linear_opposite_distance_system"
+    },
+    {
+      "pair": [
+        6,
+        9
+      ],
+      "squared_distance": "1",
+      "method": "linear_opposite_distance_system"
+    },
+    {
+      "pair": [
+        7,
+        10
+      ],
+      "squared_distance": "3",
+      "method": "linear_opposite_distance_system"
+    }
+  ]
+}

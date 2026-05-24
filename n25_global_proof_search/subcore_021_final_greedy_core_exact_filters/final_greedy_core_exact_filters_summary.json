@@ -1,0 +1,17 @@
+[
+  {
+    "filter": "triangle",
+    "returncode": 0,
+    "output_tail": "{\n  \"class_id\": \"final_greedy_core_edges\",\n  \"edge_count\": 18,\n  \"triangle_count\": 5,\n  \"triangle_component_count\": 4,\n  \"largest_component_vertices\": 4,\n  \"eliminated\": false,\n  \"failure_component\": \"\",\n  \"failure_reason\": \"\",\n  \"search_nodes\": 5,\n  \"components\": [\n    {\n      \"component_index\": 1,\n      \"triangle_count\": 2,\n      \"vertex_count\": 4,\n      \"internal_edge_count\": 5,\n      \"satisfiable\": true,\n      \"assigned_vertex_count\": 4,\n      \"search_nodes\": 2,\n      \"reason\": \"satisfied\"\n    },\n    {\n      \"component_index\": 2,\n      \"triangle_count\": 1,\n      \"vertex_count\": 3,\n      \"internal_edge_count\": 3,\n      \"satisfiable\": true,\n      \"assigned_vertex_count\": 3,\n      \"search_nodes\": 1,\n      \"reason\": \"satisfied\"\n    },\n    {\n      \"component_index\": 3,\n      \"triangle_count\": 1,\n      \"vertex_count\": 3,\n      \"internal_edge_count\": 3,\n      \"satisfiable\": true,\n      \"assigned_vertex_count\": 3,\n      \"search_nodes\": 1,\n      \"reason\": \"satisfied\"\n    },\n    {\n      \"component_index\": 4,\n      \"triangle_count\": 1,\n      \"vertex_count\": 3,\n      \"internal_edge_count\": 3,\n      \"satisfiable\": true,\n      \"assigned_vertex_count\": 3,\n      \"search_nodes\": 1,\n      \"reason\": \"satisfied\"\n    }\n  ]\n}"
+  },
+  {
+    "filter": "distance_labels",
+    "returncode": 0,
+    "output_tail": "{\n  \"source\": \"final_greedy_core_edges\",\n  \"n\": 11,\n  \"edge_count\": 18,\n  \"label_count\": 19,\n  \"derived_label_count\": 1,\n  \"linear_label_count\": 19,\n  \"linear_derived_label_count\": 1,\n  \"eliminated\": false,\n  \"certificate\": null,\n  \"derivations\": [\n    {\n      \"source_pair\": [\n        4,\n        10\n      ],\n      \"source_value\": 1,\n      \"target_pair\": [\n        1,\n        9\n      ],\n      \"target_value\": 3,\n      \"relation\": [\n        1,\n        9,\n        4,\n        10\n      ]\n    }\n  ],\n  \"linear_derivations\": [\n    {\n      \"pair\": [\n        1,\n        9\n      ],\n      \"squared_distance\": \"3\",\n      \"method\": \"linear_opposite_distance_system\"\n    }\n  ]\n}"
+  },
+  {
+    "filter": "trilateration",
+    "returncode": 0,
+    "output_tail": "{\n  \"status\": \"no_trilateration_order\",\n  \"seed_edge\": [\n    9,\n    10\n  ],\n  \"source\": \"final_greedy_core_edges\",\n  \"n\": 11,\n  \"edge_count\": 18,\n  \"precision_digits\": 140,\n  \"tolerance\": \"1e-60\",\n  \"interpretation\": \"eliminated means all finite trilateration branches from the reported seed edge failed; survived means a numerically valid branch remains and needs exact/interval verification.\"\n}"
+  }
+]

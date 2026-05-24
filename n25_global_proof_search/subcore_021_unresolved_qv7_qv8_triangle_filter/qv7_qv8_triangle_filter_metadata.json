@@ -1,0 +1,18 @@
+{
+  "source": "n25_global_proof_search\\subcore_021_unresolved_quotient_triage\\unresolved_unique_quotient_graphs.csv",
+  "target_qv": [
+    7,
+    8
+  ],
+  "target_count": 2994,
+  "completed_count": 2994,
+  "status_counts": {
+    "triangle_eliminated": 2994
+  },
+  "qv_status_counts": {
+    "qV=7,triangle_eliminated": 762,
+    "qV=8,triangle_eliminated": 2232
+  },
+  "runtime_seconds": 331.7767143249512,
+  "interpretation": "Triangle-filter pass over qV=7 and qV=8 unresolved quotient graphs after reinserting the quotient target edge. Surviving cases need distance-label and trilateration filters."
+}

@@ -1,0 +1,41 @@
+{
+  "source": "final_greedy_core_edges",
+  "n": 11,
+  "edge_count": 18,
+  "label_count": 19,
+  "derived_label_count": 1,
+  "linear_label_count": 19,
+  "linear_derived_label_count": 1,
+  "eliminated": false,
+  "certificate": null,
+  "derivations": [
+    {
+      "source_pair": [
+        4,
+        10
+      ],
+      "source_value": 1,
+      "target_pair": [
+        1,
+        9
+      ],
+      "target_value": 3,
+      "relation": [
+        1,
+        9,
+        4,
+        10
+      ]
+    }
+  ],
+  "linear_derivations": [
+    {
+      "pair": [
+        1,
+        9
+      ],
+      "squared_distance": "3",
+      "method": "linear_opposite_distance_system"
+    }
+  ]
+}

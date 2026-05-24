@@ -1,0 +1,53 @@
+{
+  "source_edges": "n25_global_proof_search\\subcore_021_final_survivor_greedy_core\\final_greedy_core_edges.csv",
+  "full_edge_count": 18,
+  "core_edge_count_without_target": 17,
+  "target_edge": [
+    3,
+    11
+  ],
+  "collision_partition_count": 4760,
+  "unique_quotient_graph_count": 2656,
+  "status_counts": {
+    "loop": 820,
+    "forced_sqrt3_by_opposite_relation": 2792,
+    "already_unit_edge_in_quotient": 528,
+    "unresolved": 620
+  },
+  "size_counts": {
+    "qV=3,qE=3": 2,
+    "qV=4,qE=5": 26,
+    "qV=4,qE=6": 177,
+    "qV=5,qE=6": 1,
+    "qV=5,qE=7": 99,
+    "qV=5,qE=8": 469,
+    "qV=5,qE=9": 515,
+    "qV=5,qE=10": 150,
+    "qV=6,qE=8": 4,
+    "qV=6,qE=9": 123,
+    "qV=6,qE=10": 536,
+    "qV=6,qE=11": 777,
+    "qV=6,qE=12": 399,
+    "qV=6,qE=13": 76,
+    "qV=6,qE=14": 3,
+    "qV=7,qE=10": 3,
+    "qV=7,qE=11": 76,
+    "qV=7,qE=12": 318,
+    "qV=7,qE=13": 456,
+    "qV=7,qE=14": 217,
+    "qV=7,qE=15": 35,
+    "qV=8,qE=12": 1,
+    "qV=8,qE=13": 26,
+    "qV=8,qE=14": 113,
+    "qV=8,qE=15": 104,
+    "qV=8,qE=16": 26,
+    "qV=9,qE=15": 7,
+    "qV=9,qE=16": 18,
+    "qV=9,qE=17": 3
+  },
+  "observed_found": {
+    "d2_0": false,
+    "d2_3": false
+  },
+  "interpretation": "Exhaustive independent collision-partition enumeration for the final 17-edge core obtained by removing target edge 3-11 from the 18-edge core. The fully singleton qV=11 case is excluded and remains the distinct case."
+}

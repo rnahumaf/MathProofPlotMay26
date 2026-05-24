@@ -1,0 +1,15 @@
+{
+  "source_edges": "n25_global_proof_search\\subcore_021_final_survivor_greedy_core\\final_greedy_core_edges.csv",
+  "removed_edge": "3-11",
+  "runs_per_scale": 700,
+  "scale_values": [
+    1.5,
+    2.0,
+    4.0,
+    8.0,
+    12.0
+  ],
+  "max_nfev": 120000,
+  "workers": 12,
+  "interpretation": "If all exact realizations of the final core without edge 3-11 force |3-11|^2 away from 1, then reinserting edge 3-11 is the local contradiction."
+}

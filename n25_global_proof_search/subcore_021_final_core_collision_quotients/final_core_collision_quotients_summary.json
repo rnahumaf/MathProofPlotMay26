@@ -1,0 +1,381 @@
+{
+  "source_edges": "n25_global_proof_search\\subcore_021_final_survivor_greedy_core\\final_greedy_core_edges.csv",
+  "removed_target": [
+    3,
+    11
+  ],
+  "claim": "For the two observed exact collision quotient branches of the final 18-edge core with edge 3-11 removed, reinserting edge 3-11 is impossible if the branch certificate is loop or forced_sqrt3.",
+  "all_observed_branches_certified": true,
+  "branches": {
+    "d2_0": {
+      "source_seed": 269633815,
+      "source_scale": 2.0,
+      "source_removed_pair_d2": 3.0814879110195774e-33,
+      "reproduced_max_abs": 1.1102230246251565e-16,
+      "reproduced_rms": 7.12417844627997e-17,
+      "target_d2": 3.0814879110195774e-33,
+      "components": [
+        [
+          1,
+          8,
+          9
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          10,
+          11
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ]
+      ],
+      "mapping": {
+        "1": 1,
+        "8": 1,
+        "9": 1,
+        "2": 2,
+        "4": 2,
+        "3": 3,
+        "10": 3,
+        "11": 3,
+        "5": 4,
+        "6": 5,
+        "7": 6
+      },
+      "quotient_vertex_count": 6,
+      "quotient_edge_count": 6,
+      "quotient_edges": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "original_edge_loops": [],
+      "target_q": [
+        3,
+        3
+      ],
+      "target_status": "loop",
+      "opposite_witnesses": [],
+      "edge_lifts": {
+        "1-2": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            9
+          ]
+        ],
+        "1-3": [
+          [
+            1,
+            10
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "1-5": [
+          [
+            1,
+            6
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "1-6": [
+          [
+            7,
+            8
+          ],
+          [
+            7,
+            9
+          ]
+        ],
+        "2-3": [
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            4,
+            11
+          ]
+        ],
+        "5-6": [
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "certificate": {
+        "valid": true,
+        "certificate_type": "target_collapses_to_loop",
+        "reason": "The target pair is identified in the collision quotient, so reinserting it as a unit edge would be a loop."
+      }
+    },
+    "d2_3": {
+      "source_seed": 228684276,
+      "source_scale": 1.5,
+      "source_removed_pair_d2": 2.9999999999999996,
+      "reproduced_max_abs": 1.1102230246251565e-16,
+      "reproduced_rms": 7.12417844627997e-17,
+      "target_d2": 2.9999999999999996,
+      "components": [
+        [
+          1,
+          8,
+          9
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "mapping": {
+        "1": 1,
+        "8": 1,
+        "9": 1,
+        "2": 2,
+        "4": 2,
+        "3": 3,
+        "5": 4,
+        "6": 5,
+        "7": 6,
+        "10": 7,
+        "11": 7
+      },
+      "quotient_vertex_count": 7,
+      "quotient_edge_count": 8,
+      "quotient_edges": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "original_edge_loops": [],
+      "target_q": [
+        3,
+        7
+      ],
+      "target_status": "forced_sqrt3_by_opposite_relation",
+      "opposite_witnesses": [
+        [
+          1,
+          2
+        ]
+      ],
+      "edge_lifts": {
+        "1-2": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            9
+          ]
+        ],
+        "1-3": [
+          [
+            3,
+            9
+          ]
+        ],
+        "1-5": [
+          [
+            1,
+            6
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "1-6": [
+          [
+            7,
+            8
+          ],
+          [
+            7,
+            9
+          ]
+        ],
+        "1-7": [
+          [
+            1,
+            10
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "2-3": [
+          [
+            2,
+            3
+          ]
+        ],
+        "2-7": [
+          [
+            2,
+            11
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            4,
+            11
+          ]
+        ],
+        "5-6": [
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "certificate": {
+        "valid": true,
+        "certificate_type": "opposite_distance_forces_sqrt3",
+        "reason": "The target quotient pair has two common unit-neighbors that are unit distance apart, forcing target squared distance 3.",
+        "witnesses": [
+          {
+            "common_neighbors": [
+              1,
+              2
+            ],
+            "neighbor_edge": [
+              1,
+              2
+            ],
+            "relation": "|Q3-Q7|^2 + |Q1-Q2|^2 = 4",
+            "neighbor_edge_squared_distance": 1,
+            "forced_target_squared_distance": 3
+          }
+        ]
+      }
+    }
+  }
+}

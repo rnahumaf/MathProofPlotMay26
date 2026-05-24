@@ -1,0 +1,8 @@
+{
+  "source": "n25_global_proof_search\\subcore_021_unresolved_quotient_target_probe\\qv6_unresolved_target_probe_summary.csv",
+  "tested_count": 50,
+  "status_counts": {
+    "triangle_eliminated": 50
+  },
+  "interpretation": "Exact-filter pass over qV=6 unresolved quotient graphs after reinserting the quotient target edge. These are candidates already numerically not found."
+}

@@ -1,0 +1,145 @@
+{
+  "source": "survivor_010_source_05404_edges",
+  "n": 11,
+  "edge_count": 23,
+  "label_count": 28,
+  "derived_label_count": 5,
+  "linear_label_count": 28,
+  "linear_derived_label_count": 5,
+  "eliminated": false,
+  "certificate": null,
+  "derivations": [
+    {
+      "source_pair": [
+        2,
+        3
+      ],
+      "source_value": 1,
+      "target_pair": [
+        8,
+        11
+      ],
+      "target_value": 3,
+      "relation": [
+        2,
+        3,
+        8,
+        11
+      ]
+    },
+    {
+      "source_pair": [
+        2,
+        6
+      ],
+      "source_value": 1,
+      "target_pair": [
+        1,
+        5
+      ],
+      "target_value": 3,
+      "relation": [
+        2,
+        6,
+        1,
+        5
+      ]
+    },
+    {
+      "source_pair": [
+        8,
+        11
+      ],
+      "source_value": 3,
+      "target_pair": [
+        3,
+        4
+      ],
+      "target_value": 1,
+      "relation": [
+        3,
+        4,
+        8,
+        11
+      ]
+    },
+    {
+      "source_pair": [
+        4,
+        9
+      ],
+      "source_value": 1,
+      "target_pair": [
+        1,
+        8
+      ],
+      "target_value": 3,
+      "relation": [
+        4,
+        9,
+        1,
+        8
+      ]
+    },
+    {
+      "source_pair": [
+        1,
+        5
+      ],
+      "source_value": 3,
+      "target_pair": [
+        6,
+        9
+      ],
+      "target_value": 1,
+      "relation": [
+        6,
+        9,
+        1,
+        5
+      ]
+    }
+  ],
+  "linear_derivations": [
+    {
+      "pair": [
+        1,
+        5
+      ],
+      "squared_distance": "3",
+      "method": "linear_opposite_distance_system"
+    },
+    {
+      "pair": [
+        1,
+        8
+      ],
+      "squared_distance": "3",
+      "method": "linear_opposite_distance_system"
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "squared_distance": "1",
+      "method": "linear_opposite_distance_system"
+    },
+    {
+      "pair": [
+        6,
+        9
+      ],
+      "squared_distance": "1",
+      "method": "linear_opposite_distance_system"
+    },
+    {
+      "pair": [
+        8,
+        11
+      ],
+      "squared_distance": "3",
+      "method": "linear_opposite_distance_system"
+    }
+  ]
+}

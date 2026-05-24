@@ -1,0 +1,41 @@
+{
+  "source_edges": "n25_global_proof_search\\subcore_021_removed_edge_structure_audit\\subcore_021_without_3_12_edges.csv",
+  "edge_count": 24,
+  "target_pair": [
+    3,
+    12
+  ],
+  "qv_range": [
+    9,
+    10,
+    11
+  ],
+  "partition_count": 5518,
+  "unique_quotient_graph_count": 5428,
+  "status_counts": {
+    "already_unit_edge_in_quotient": 1159,
+    "forced_sqrt3_by_opposite_relation": 1957,
+    "unresolved": 2004,
+    "loop": 398
+  },
+  "size_counts": {
+    "qV=9,qE=16": 17,
+    "qV=9,qE=17": 179,
+    "qV=9,qE=18": 845,
+    "qV=9,qE=19": 1781,
+    "qV=9,qE=20": 1453,
+    "qV=9,qE=21": 470,
+    "qV=9,qE=22": 70,
+    "qV=9,qE=23": 6,
+    "qV=10,qE=19": 16,
+    "qV=10,qE=20": 136,
+    "qV=10,qE=21": 303,
+    "qV=10,qE=22": 169,
+    "qV=10,qE=23": 29,
+    "qV=10,qE=24": 2,
+    "qV=11,qE=22": 17,
+    "qV=11,qE=23": 22,
+    "qV=11,qE=24": 3
+  },
+  "interpretation": "This extends collision-quotient enumeration to weak-collision partitions with qV=9..11. The singleton qV=12 case remains the fully distinct case."
+}

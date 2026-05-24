@@ -1,0 +1,41 @@
+{
+  "source": "subcore_020_edges",
+  "n": 12,
+  "edge_count": 25,
+  "label_count": 26,
+  "derived_label_count": 1,
+  "linear_label_count": 26,
+  "linear_derived_label_count": 1,
+  "eliminated": false,
+  "certificate": null,
+  "derivations": [
+    {
+      "source_pair": [
+        4,
+        11
+      ],
+      "source_value": 1,
+      "target_pair": [
+        1,
+        10
+      ],
+      "target_value": 3,
+      "relation": [
+        1,
+        10,
+        4,
+        11
+      ]
+    }
+  ],
+  "linear_derivations": [
+    {
+      "pair": [
+        1,
+        10
+      ],
+      "squared_distance": "3",
+      "method": "linear_opposite_distance_system"
+    }
+  ]
+}

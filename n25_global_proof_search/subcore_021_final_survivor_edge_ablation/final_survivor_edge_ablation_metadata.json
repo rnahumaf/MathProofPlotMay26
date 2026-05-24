@@ -1,0 +1,12 @@
+{
+  "source": "n25_global_proof_search\\subcore_021_final_high_block_survivor_probe\\final_high_block_survivor_probe_metadata.json",
+  "runs_per_scale": 160,
+  "scale_values": [
+    2.0,
+    4.0,
+    8.0
+  ],
+  "max_nfev": 90000,
+  "workers": 12,
+  "interpretation": "Single-edge ablation for the final qV=11 quotient survivor. If removing an edge keeps best_max_abs bounded away from zero, the edge is not necessary for the numerical obstruction. If removing an edge solves the graph, it is critical."
+}

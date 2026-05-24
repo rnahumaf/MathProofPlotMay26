@@ -2,10 +2,24 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+*.pyc
 
 # Local external repos used only for review/comparison
 _external_review/
+tmp_repo_audit/
 
 # OS/editor noise
 .DS_Store
 Thumbs.db
+
+# Proof-search generated bulk outputs
+n25_global_proof_search/**/*_runs.csv
+n25_global_proof_search/**/*_coords.csv
+n25_global_proof_search/**/*_distance_table.csv
+n25_global_proof_search/**/*_pair_distances.csv
+n25_global_proof_search/**/*_edge_residuals.csv
+n25_global_proof_search/**/*_target_edges.csv
+n25_global_proof_search/**/*_details.json
+
+# Per-case generated folders
+n25_global_proof_search/**/case_*/

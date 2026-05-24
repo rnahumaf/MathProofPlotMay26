@@ -1,0 +1,67 @@
+{
+  "source": "subcore_015_edges",
+  "n": 12,
+  "edge_count": 25,
+  "label_count": 27,
+  "derived_label_count": 2,
+  "linear_label_count": 27,
+  "linear_derived_label_count": 2,
+  "eliminated": false,
+  "certificate": null,
+  "derivations": [
+    {
+      "source_pair": [
+        5,
+        10
+      ],
+      "source_value": 1,
+      "target_pair": [
+        1,
+        9
+      ],
+      "target_value": 3,
+      "relation": [
+        1,
+        9,
+        5,
+        10
+      ]
+    },
+    {
+      "source_pair": [
+        6,
+        8
+      ],
+      "source_value": 1,
+      "target_pair": [
+        3,
+        7
+      ],
+      "target_value": 3,
+      "relation": [
+        3,
+        7,
+        6,
+        8
+      ]
+    }
+  ],
+  "linear_derivations": [
+    {
+      "pair": [
+        1,
+        9
+      ],
+      "squared_distance": "3",
+      "method": "linear_opposite_distance_system"
+    },
+    {
+      "pair": [
+        3,
+        7
+      ],
+      "squared_distance": "3",
+      "method": "linear_opposite_distance_system"
+    }
+  ]
+}

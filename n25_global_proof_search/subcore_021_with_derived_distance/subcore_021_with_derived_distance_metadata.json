@@ -1,0 +1,24 @@
+{
+  "edges": "n25_global_proof_search\\hard_subcore_exact_filter_checks\\subcore_021_edges.csv",
+  "derived_constraints": [
+    {
+      "i": 1,
+      "j": 9,
+      "squared_distance": 3
+    }
+  ],
+  "runs_per_cell": 240,
+  "scales": [
+    2.0,
+    4.0,
+    8.0
+  ],
+  "weights": [
+    1.0,
+    10.0,
+    100.0
+  ],
+  "max_nfev": 100000,
+  "workers": 12,
+  "interpretation": "If the residual remains bounded away from zero after adding the derived |1-9|^2=3 equation, subcore_021 is a stronger target for an interval/algebraic certificate."
+}

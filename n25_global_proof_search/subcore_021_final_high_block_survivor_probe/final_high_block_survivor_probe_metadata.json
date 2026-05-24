@@ -1,0 +1,21 @@
+{
+  "source": "n25_global_proof_search\\subcore_021_high_block_survivor_exact_filters\\high_block_survivor_exact_filter_summary.csv",
+  "source_index": "5395",
+  "q_vertex_count": "11",
+  "q_edge_count_before_target": "22",
+  "target_q": "3-11",
+  "edge_count_with_target": 23,
+  "representative_blocks": "1 | 2 | 3 | 4 | 5 | 6 | 7,11 | 8 | 9 | 10 | 12",
+  "q_edges_plus_target": "1-2 1-4 1-6 1-10 2-3 2-6 2-11 3-7 3-9 3-11 4-8 4-9 4-10 4-11 5-6 5-7 5-10 6-7 6-8 7-8 7-9 8-11 9-10",
+  "runs_per_scale": 600,
+  "scale_values": [
+    1.5,
+    2.0,
+    4.0,
+    8.0,
+    12.0
+  ],
+  "max_nfev": 120000,
+  "workers": 12,
+  "interpretation": "Focused numerical probe of the single qV=9..11 unresolved quotient that survived triangle, distance-label, and finite trilateration filters."
+}

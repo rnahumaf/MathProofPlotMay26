@@ -9,6 +9,193 @@ U(25) = 70
 At this stage we still treat `70` as a conjectural universal maximum and a
 confirmed computational record.
 
+## Current Status
+
+This README is currently tracking a proof-search route toward the upper-bound
+side of the conjecture:
+
+```text
+U(25) <= 70
+```
+
+The global statement is not proved yet. The active work is focused on a hard
+non-trilaterable obstruction extracted from the current frontier.
+
+### Active target
+
+The current active target is the reduced 18-edge core extracted from
+`subcore_021`:
+
+```text
+1-2 1-4 1-6 1-10
+2-3 2-11
+3-9 3-11
+4-8 4-9 4-10 4-11
+6-7 6-8
+7-8 7-9
+8-11
+9-10
+```
+
+The current target edge is:
+
+```text
+3-11
+```
+
+Removing `3-11` gives a 17-edge core with exact numerical realizations. The
+observed exact branches force:
+
+```text
+|3-11|^2 = 0
+or
+|3-11|^2 = 3
+```
+
+No observed exact branch realizes `|3-11|^2 = 1`.
+
+### Current proof gap
+
+The latest collision-partition enumeration of the 17-edge core confirmed that
+the two observed branches are present in the exhaustive partition list. The
+remaining local gaps are:
+
+```text
+1. eliminate or certify the 620 unresolved collision partitions;
+2. classify already_unit_edge_in_quotient branches as degenerate;
+3. exclude the fully distinct/singleton realization case.
+```
+
+### Estimated progress
+
+```text
+Local certificate for the reduced 18-edge core:        ~70-80%
+Local certificate for subcore_021:                     ~60-75%
+Reusable elimination pipeline for hard subcores:       ~45-55%
+Global proof over the full n25 search frontier:        ~25-35%
+Formal/publication-grade proof with no computational gaps: ~15-25%
+```
+
+These percentages are qualitative working estimates, not mathematical
+probabilities.
+
+### Next planned command
+
+Apply triangle filtering to the `620` unresolved quotient partitions from the
+final 17-edge core enumeration. If any survive, apply distance-label and
+trilateration filters only to those survivors.
+
+## Progress Timeline
+
+This section is the compact operational timeline. Detailed evidence remains in
+Layers 1-17 below.
+
+### Current high-level estimate
+
+```text
+Local certificate for the reduced 18-edge core:        ~70-80%
+Local certificate for subcore_021:                     ~60-75%
+Reusable elimination pipeline for hard subcores:       ~45-55%
+Global proof over the full n25 search frontier:        ~25-35%
+Formal/publication-grade proof with no computational gaps: ~15-25%
+```
+
+These percentages are qualitative working estimates, not mathematical
+probabilities.
+
+### Completed milestones
+
+```text
+Layers 1-9:
+  Built the abstract, numerical, triangle-lattice, and finite-trilateration
+  filters. The finitely trilaterable frontier is well covered by certificates.
+
+Layers 10-14:
+  Identified the non-trilaterable frontier as the hard remaining regime.
+  Corrected the old forced-edge route after discovering collapsed witnesses.
+  Switched to collision-aware subcore targets.
+
+Layer 15:
+  Found subcore_021 as the strongest hard local target.
+  Found critical edge 3-12.
+  Removing 3-12 gives exact degenerate branches.
+  Observed branches force |3-12|^2 = 0 or 3, never 1.
+  Certified the observed d2_0 and d2_3 quotient branches.
+
+Layer 16:
+  Enumerated collision quotients for subcore_021 - {3-12}.
+  Closed the unresolved qV<=8 quotient class by triangle filtering.
+  Extended to qV=9..11 and reduced the last survivor to a smaller core.
+
+Layer 17:
+  Reduced the last survivor from 23 edges to an 18-edge core.
+  Found that the 18-edge core is numerically edge-critical.
+  Removing target edge 3-11 gives exact degenerate branches.
+  Observed branches force |3-11|^2 = 0 or 3, never 1.
+  Certified the observed d2_0 and d2_3 quotient branches.
+  Confirmed both observed branches in the active-vertex collision-partition
+  enumeration of the 17-edge core.
+```
+
+### Remaining gaps
+
+```text
+Reduced 18-edge core:
+  1. Eliminate or certify the 620 unresolved collision partitions of the
+     17-edge core after reinserting 3-11.
+  2. Classify already_unit_edge_in_quotient branches as degenerate branches.
+  3. Exclude the fully distinct/singleton realization case.
+
+subcore_021:
+  4. Lift the reduced-core obstruction back to the final high-block survivor.
+  5. Lift the survivor obstruction back to subcore_021.
+
+global frontier:
+  6. Reuse the pipeline over remaining hard subcores.
+  7. Produce reproducible certificates and a final audit table.
+```
+
+## Active Commands
+
+These commands are the most relevant to the current Layer 17 frontier.
+Historical commands from earlier layers are preserved in the next section.
+
+Recheck the reduced 18-edge core with the existing exact filters:
+
+```powershell
+python .\n25_global_proof_search\subcore_021_final_greedy_core_exact_filters.py
+```
+
+Audit the distance forced by removing the current target edge `3-11`:
+
+```powershell
+python .\n25_global_proof_search\subcore_021_final_core_remove_3_11_distance_audit.py
+```
+
+Extract and certify the observed collision quotient branches of the final core:
+
+```powershell
+python .\n25_global_proof_search\subcore_021_final_core_collision_quotients.py
+```
+
+Enumerate collision partitions for the 17-edge core obtained by removing
+`3-11`:
+
+```powershell
+python .\n25_global_proof_search\subcore_021_final_core_collision_partition_enumeration.py
+```
+
+Current next step:
+
+```text
+Apply triangle filtering to the 620 unresolved quotient partitions from:
+
+n25_global_proof_search\subcore_021_final_core_collision_partition_enumeration\final_core_unique_quotient_graphs.csv
+```
+
+If survivors remain after triangle filtering, apply `distance_label_eliminator.py`
+and `trilateration_eliminator.py` only to those survivors.
+
 ## Layer 1: Abstract Graph Filters
 
 Any planar unit-distance graph must satisfy at least these graph conditions:
@@ -21,10 +208,10 @@ Any planar unit-distance graph must satisfy at least these graph conditions:
 
 The heuristic search shows that these necessary conditions are not enough:
 
-| Filter | Best Abstract Graph Found |
-| --- | ---: |
-| `K_{2,3}`-free + `K_4`-free | 85 edges |
-| plus local unit-circle neighborhood rule | 84 edges |
+| Filter                                   | Best Abstract Graph Found |
+| ---------------------------------------- | ------------------------: |
+| `K_{2,3}`-free + `K_4`-free              |                  85 edges |
+| plus local unit-circle neighborhood rule |                  84 edges |
 
 Files:
 
@@ -49,10 +236,10 @@ Failure is numerical evidence only, not a proof.
 
 Latest checks:
 
-| Input Graph | Edge Count | Best Max Edge-Squared Error | Distinct? |
-| --- | ---: | ---: | --- |
-| known UCCS record | 70 | `2.22e-16` | no, edge-only solve collapsed vertices |
-| local-circle abstract candidate | 84 | `6.61e-1` | yes, but far from unit-edge feasibility |
+| Input Graph                     | Edge Count | Best Max Edge-Squared Error | Distinct?                               |
+| ------------------------------- | ---------: | --------------------------: | --------------------------------------- |
+| known UCCS record               |         70 |                  `2.22e-16` | no, edge-only solve collapsed vertices  |
+| local-circle abstract candidate |         84 |                   `6.61e-1` | yes, but far from unit-edge feasibility |
 
 The exact non-collapsed certificate for the known 70-edge example remains
 `../n25_max70_investigation/n25_e70_exact_certificate.json`.
@@ -106,10 +293,10 @@ edge-connected triangle component.
 
 Results:
 
-| Input | Edge Count | Result |
-| --- | ---: | --- |
-| known UCCS record | 70 | passes |
-| old local-circle candidate pool | 80-84 | 600/600 eliminated |
+| Input                           | Edge Count | Result             |
+| ------------------------------- | ---------: | ------------------ |
+| known UCCS record               |         70 | passes             |
+| old local-circle candidate pool |      80-84 | 600/600 eliminated |
 
 This is the first rigorous eliminator in the upper-bound direction: any class
 eliminated here cannot be a planar unit-distance graph. It still does not close
@@ -404,7 +591,277 @@ Files:
 - `collision_forced_subcore_audit/subcore_collision_details.json`
 - `collision_forced_subcore_audit/target_subcore_015_edges.csv`
 
-## Commands
+## Layer 15: Collision-Quotient Certificate for `subcore_021`
+
+A stronger local obstruction was found inside the hard non-trilaterable
+frontier.
+
+The best hard target is `subcore_021`, a 12-vertex, 25-edge induced subcore.
+A direct numerical probe remained bounded away from zero residual:
+
+```text
+best exact-probe residual: about 1.24e-1
+triangle lattice filter: passed
+distance-label filter: passed
+finite trilateration: no order
+```
+
+Single-edge ablation showed that removing edge `3-12` makes the system exactly
+solvable numerically:
+
+```text
+subcore_021 - {3-12}: exact numerical realizations found
+subcore_021: no exact realization found
+```
+
+Auditing the removed pair over exact numerical realizations of the 24-edge core
+showed only two observed branches:
+
+```text
+|3-12|^2 = 0
+|3-12|^2 = 3
+|3-12|^2 = 1 was never observed
+```
+
+Collision-quotient extraction gave two simple quotient branches.
+
+### Branch `d2_0`
+
+```text
+Q1 = (1,5,8,9)
+Q2 = (2,11)
+Q3 = (3,6,10,12)
+Q4 = (4,7)
+```
+
+The target pair `3-12` maps to `Q3-Q3`, hence becomes a loop. Reinserting
+`3-12` as a unit edge is impossible in this branch.
+
+### Branch `d2_3`
+
+```text
+Q1 = (1,5)
+Q2 = (2,4,7,11)
+Q3 = (3)
+Q4 = (6,10,12)
+Q5 = (8,9)
+```
+
+The target pair `3-12` maps to `Q3-Q4`.
+
+In the quotient graph, `Q3` and `Q4` have common unit-neighbors `Q2` and `Q5`,
+and `Q2-Q5` is also a unit edge. Therefore the opposite-distance relation gives
+
+```text
+|Q3-Q4|^2 + |Q2-Q5|^2 = 4
+```
+
+Since `|Q2-Q5|^2 = 1`, this forces
+
+```text
+|Q3-Q4|^2 = 3
+```
+
+So reinserting `3-12` as a unit edge is also impossible in this branch.
+
+Current status:
+
+```text
+all observed collision quotient branches certified: true
+universal proof status: not complete
+```
+
+The remaining gap is to prove that every exact realization of the 24-edge core
+falls into one of these collision quotients, or to produce an interval/algebraic
+certificate excluding all distinct realizations directly.
+
+Files:
+
+- `subcore_021_collision_quotients/collision_quotients_summary.json`
+- `subcore_021_collision_quotient_certificate/collision_quotient_certificate.json`
+- `subcore_021_remove_3_12_distance_audit/remove_3_12_distance_summary.csv`
+- `subcore_021_without_3_12_distinct_sweep/without_3_12_distinct_sweep_summary.csv`
+- `subcore_021_without_3_12_best_distinct_audit/best_distinct_audit_summary.json`
+
+## Layer 16: Exhaustion of Unresolved Collision Quotients
+
+The collision-quotient enumeration for the 24-edge core
+`subcore_021 - {3-12}` produced:
+
+```text
+independent-set partitions: 80100
+loop: 12004
+forced_sqrt3_by_opposite_relation: 56652
+already_unit_edge_in_quotient: 7389
+unresolved: 4055
+```
+
+The two numerically observed quotient branches from Layer 15 were recovered in
+the enumeration.
+
+The `unresolved` class was deduplicated to 3044 unique quotient graphs. After
+reinserting the target quotient edge, all were eliminated by exact triangle
+filtering:
+
+```text
+qV=6 unresolved unique quotient graphs: 50/50 triangle-eliminated
+qV=7 unresolved unique quotient graphs: 762/762 triangle-eliminated
+qV=8 unresolved unique quotient graphs: 2232/2232 triangle-eliminated
+total unresolved unique quotient graphs: 3044/3044 triangle-eliminated
+```
+
+Thus the previous combinatorial gap for unresolved quotient branches is closed.
+
+The remaining class is:
+
+```text
+already_unit_edge_in_quotient:
+  partitions: 7389
+  unique quotient graphs: 4471
+```
+
+These are not immediate contradictions after reinserting `3-12`, because the
+target quotient pair is already a unit edge. However, they are still degenerate
+collision branches: every such partition has at least one nontrivial collision
+block. They therefore do not constitute distinct realizations of the original
+12-vertex subcore.
+
+Current proof frontier:
+
+```text
+closed:
+  observed d2_0/d2_3 branches certified
+  unresolved quotient branches eliminated by triangle filters
+
+remaining:
+  exclude the fully distinct/singleton realization case for subcore_021
+  or produce an interval/algebraic certificate for the full 25-edge subcore
+```
+
+Files:
+
+- `subcore_021_collision_quotient_enumeration/collision_quotient_partition_enumeration_summary.json`
+- `subcore_021_unresolved_quotient_triage/unresolved_quotient_triage_summary.json`
+- `subcore_021_unresolved_quotient_target_probe/qv6_unresolved_target_probe_metadata.json`
+- `subcore_021_qv6_quotient_exact_filters/qv6_exact_filter_metadata.json`
+- `subcore_021_unresolved_qv7_qv8_triangle_filter/qv7_qv8_triangle_filter_metadata.json`
+- `subcore_021_already_unit_quotient_triage/already_unit_quotient_triage_summary.json`
+
+## Layer 17: Reduced 18-Edge Core Certificate Candidate
+
+The last high-block quotient survivor was reduced by greedy edge ablation.
+
+Initial survivor:
+
+```text
+qV = 11
+edge count with target = 23
+target quotient edge = 3-11
+```
+
+Greedy reduction removed:
+
+```text
+2-6
+5-6
+5-10
+5-7
+3-7
+```
+
+The resulting 18-edge core is:
+
+```text
+1-2 1-4 1-6 1-10
+2-3 2-11
+3-9 3-11
+4-8 4-9 4-10 4-11
+6-7 6-8
+7-8 7-9
+8-11
+9-10
+```
+
+This core remained numerically obstructed:
+
+```text
+best residual: about 1.3e-1
+solved <= 1e-4: 0
+```
+
+Single-edge ablation indicated that the 18-edge core is numerically edge-critical:
+removing any remaining edge produced near-exact realizations.
+
+Removing the target edge `3-11` gives a 17-edge graph with exact numerical
+realizations. Auditing the removed distance showed only two observed branches:
+
+```text
+|3-11|^2 = 0
+|3-11|^2 = 3
+|3-11|^2 = 1 was never observed
+```
+
+Collision-quotient extraction certified both observed branches.
+
+### Branch `d2_0`
+
+```text
+Q1 = (1,8,9)
+Q2 = (2,4)
+Q3 = (3,10,11)
+Q4 = (5)
+Q5 = (6)
+Q6 = (7)
+```
+
+The target pair `3-11` maps to `Q3-Q3`, hence becomes a loop.
+
+### Branch `d2_3`
+
+```text
+Q1 = (1,8,9)
+Q2 = (2,4)
+Q3 = (3)
+Q4 = (5)
+Q5 = (6)
+Q6 = (7)
+Q7 = (10,11)
+```
+
+The target pair `3-11` maps to `Q3-Q7`.
+
+In the quotient graph, `Q3` and `Q7` have common unit-neighbors `Q1` and `Q2`,
+and `Q1-Q2` is also a unit edge. Therefore:
+
+```text
+|Q3-Q7|^2 + |Q1-Q2|^2 = 4
+```
+
+Since `|Q1-Q2|^2 = 1`, this forces:
+
+```text
+|Q3-Q7|^2 = 3
+```
+
+So reinserting `3-11` as a unit edge is impossible in this branch.
+
+Current status:
+
+```text
+observed final-core branches certified: true
+remaining gap: prove these are the only exact branches of the 17-edge core
+```
+
+Files:
+
+- `subcore_021_final_survivor_greedy_core/final_greedy_core_edges.csv`
+- `subcore_021_final_core_remove_3_11_distance_audit/remove_3_11_distance_summary.json`
+- `subcore_021_final_core_collision_quotients/final_core_collision_quotients_summary.json`
+
+## Historical Commands
+
+The commands below document earlier layers of the search. They are retained for
+reproducibility, but they are not the current active next step.
 
 Basic abstract search:
 
@@ -513,12 +970,16 @@ python .\n25_global_proof_search\trilateration_eliminator.py --edges .\n25_globa
 python .\n25_global_proof_search\triangle_lattice_filter.py --edges .\n25_global_proof_search\collision_forced_subcore_audit\target_subcore_015_edges.csv
 ```
 
-## Next Proof Step
+## Historical Note: Proof Route Before Layers 15-17
 
-The next rigorous layer is no longer the finitely trilaterable frontier; that
-part is well covered by certificates. The old forced-edge route also cannot be
-used unless it is made collision-aware. The remaining hard case is the
-non-trilaterable frontier. The practical route is:
+This section records the proof route before the `subcore_021` collision-quotient
+work became the active frontier. It is kept as historical context, not as the
+current next step.
+
+The finitely trilaterable frontier was already well covered by certificates.
+The old forced-edge route also could not be used unless it was made
+collision-aware. At that stage, the remaining hard case was the
+non-trilaterable frontier. The practical route was:
 
 1. collect and classify non-trilaterable `71+` candidates passing all exact
    filters;
@@ -529,4 +990,10 @@ non-trilaterable frontier. The practical route is:
    of least-squares numerics;
 5. repeat over all non-isomorphic frontier candidates above 70 edges.
 
-Only after that can `U(25) <= 70` be claimed as a universal proof.
+Only after that kind of global audit can `U(25) <= 70` be claimed as a
+universal proof.
+
+The current active route is now more specific: close the reduced 18-edge core
+from Layer 17, then lift that obstruction back to `subcore_021` and finally to
+the hard non-trilaterable frontier. See `Current Status` and `Progress Timeline`
+for the active state.

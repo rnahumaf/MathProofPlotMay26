@@ -1,0 +1,16 @@
+{
+  "source": "n25_global_proof_search\\subcore_021_unresolved_quotient_triage\\unresolved_unique_quotient_graphs.csv",
+  "pilot": "qV=6 unresolved unique quotient graphs",
+  "target_count": 50,
+  "runs_per_scale": 80,
+  "scale_values": [
+    2.0,
+    4.0,
+    8.0
+  ],
+  "max_nfev": 60000,
+  "status_counts": {
+    "target_plus_quotient_not_found": 50
+  },
+  "interpretation": "Each unresolved quotient graph was tested after reinserting the quotient target edge. If target_plus_quotient_not_found persists after stronger runs, that quotient branch is unlikely to support the full subcore_021 target edge."
+}

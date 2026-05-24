@@ -1,0 +1,18 @@
+{
+  "target_indices": [
+    21,
+    18,
+    20,
+    3,
+    15
+  ],
+  "runs_per_scale": 300,
+  "scale_values": [
+    2.0,
+    4.0,
+    8.0
+  ],
+  "max_nfev": 80000,
+  "workers": 12,
+  "interpretation": "If a subcore still has best_max_abs bounded away from zero after this exact probe, it becomes a better target for interval/algebraic elimination than collision-only subcore_015."
+}

@@ -1,0 +1,10 @@
+{
+  "source": "n25_global_proof_search\\subcore_021_high_block_unresolved_triangle_filter\\high_block_unresolved_triangle_filter_summary.csv",
+  "triangle_survivor_count": 11,
+  "status_counts": {
+    "distance_label_eliminated": 8,
+    "trilateration_eliminated": 2,
+    "no_trilateration_order": 1
+  },
+  "interpretation": "Distance-label and trilateration pass over the qV=9..11 quotient graphs that survived triangle filtering after reinserting the target edge."
+}

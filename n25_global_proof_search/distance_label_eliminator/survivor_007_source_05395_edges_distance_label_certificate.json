@@ -1,0 +1,67 @@
+{
+  "source": "survivor_007_source_05395_edges",
+  "n": 11,
+  "edge_count": 23,
+  "label_count": 25,
+  "derived_label_count": 2,
+  "linear_label_count": 25,
+  "linear_derived_label_count": 2,
+  "eliminated": false,
+  "certificate": null,
+  "derivations": [
+    {
+      "source_pair": [
+        4,
+        10
+      ],
+      "source_value": 1,
+      "target_pair": [
+        1,
+        9
+      ],
+      "target_value": 3,
+      "relation": [
+        1,
+        9,
+        4,
+        10
+      ]
+    },
+    {
+      "source_pair": [
+        6,
+        7
+      ],
+      "source_value": 1,
+      "target_pair": [
+        5,
+        8
+      ],
+      "target_value": 3,
+      "relation": [
+        5,
+        8,
+        6,
+        7
+      ]
+    }
+  ],
+  "linear_derivations": [
+    {
+      "pair": [
+        1,
+        9
+      ],
+      "squared_distance": "3",
+      "method": "linear_opposite_distance_system"
+    },
+    {
+      "pair": [
+        5,
+        8
+      ],
+      "squared_distance": "3",
+      "method": "linear_opposite_distance_system"
+    }
+  ]
+}

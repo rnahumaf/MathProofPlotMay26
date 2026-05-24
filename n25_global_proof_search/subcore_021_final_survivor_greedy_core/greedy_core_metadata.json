@@ -1,0 +1,32 @@
+{
+  "source": "n25_global_proof_search\\subcore_021_final_high_block_survivor_probe\\final_high_block_survivor_probe_metadata.json",
+  "source_index": "5395",
+  "q_vertex_count": 11,
+  "initial_edge_count": 23,
+  "final_edge_count": 18,
+  "target_q": "3-11",
+  "representative_blocks": "1 | 2 | 3 | 4 | 5 | 6 | 7,11 | 8 | 9 | 10 | 12",
+  "runs_per_scale": 90,
+  "scale_values": [
+    2.0,
+    4.0,
+    8.0
+  ],
+  "max_nfev": 90000,
+  "keep_obstruction_threshold": 0.05,
+  "workers": 12,
+  "final_best": {
+    "best_max_abs": 0.13018230549092658,
+    "best_rms": 0.07678153173694638,
+    "best_seed": 253566144,
+    "best_nfev": 30,
+    "median_max_abs": 0.2314940251461144,
+    "median_rms": 0.12257473128690777,
+    "solved_1e8": 0,
+    "solved_1e6": 0,
+    "solved_1e4": 0,
+    "scale": 4.0
+  },
+  "final_edges": "1-2 1-4 1-6 1-10 2-3 2-11 3-9 3-11 4-8 4-9 4-10 4-11 6-7 6-8 7-8 7-9 8-11 9-10",
+  "interpretation": "Greedy reduction of the final high-block quotient survivor. A removed edge is considered nonessential if the graph without it still has best residual above the obstruction threshold and no near-exact solution."
+}

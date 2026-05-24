@@ -1,0 +1,13 @@
+{
+  "source_edges": "n25_global_proof_search\\hard_subcore_exact_filter_checks\\subcore_021_edges.csv",
+  "removed_edge": "3-12",
+  "runs_per_scale": 500,
+  "scale_values": [
+    2.0,
+    4.0,
+    8.0
+  ],
+  "max_nfev": 100000,
+  "workers": 12,
+  "interpretation": "If all exact realizations of subcore_021 without edge 3-12 force |3-12|^2 away from 1, then adding edge 3-12 is the local contradiction target."
+}

@@ -1,0 +1,24 @@
+{
+  "source": "n25_global_proof_search\\subcore_021_high_block_collision_quotient_enumeration\\high_block_unique_quotient_graphs.csv",
+  "target_qv": [
+    9,
+    10,
+    11
+  ],
+  "target_count": 1978,
+  "completed_count": 1978,
+  "status_counts": {
+    "triangle_eliminated": 1967,
+    "triangle_survived": 11
+  },
+  "qv_status_counts": {
+    "qV=10,triangle_eliminated": 383,
+    "qV=10,triangle_survived": 5,
+    "qV=11,triangle_eliminated": 31,
+    "qV=11,triangle_survived": 5,
+    "qV=9,triangle_eliminated": 1553,
+    "qV=9,triangle_survived": 1
+  },
+  "runtime_seconds": 200.45660161972046,
+  "interpretation": "Triangle-filter pass over qV=9..11 unresolved quotient graphs after reinserting the quotient target edge. Any survivors need distance-label and trilateration filters."
+}

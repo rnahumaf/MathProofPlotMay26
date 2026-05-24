@@ -1,0 +1,21 @@
+{
+  "edges": "n25_global_proof_search\\collision_forced_subcore_audit\\target_subcore_015_edges.csv",
+  "n": 12,
+  "edge_count": 25,
+  "min_seps": [
+    0.2,
+    0.1,
+    0.05,
+    0.02,
+    0.01,
+    0.005,
+    0.002
+  ],
+  "runs_per_sep": 40,
+  "max_nfev": 40000,
+  "scale": 4.0,
+  "collision_weight": 20.0,
+  "loss_f_scale": 1.0,
+  "workers": 12,
+  "interpretation": "If best_max_abs tends toward 0 as min_separation tends toward 0, the obstruction is likely a collision-limit phenomenon rather than a fixed positive residual certificate."
+}
