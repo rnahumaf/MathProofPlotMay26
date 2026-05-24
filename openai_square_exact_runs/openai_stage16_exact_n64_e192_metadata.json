@@ -1,0 +1,141 @@
+{
+  "run": {
+    "n": 64,
+    "side": 8,
+    "best_edges": 192,
+    "mean_edges": 185.3,
+    "std_edges": 2.571,
+    "min_edges": 183,
+    "max_edges": 192,
+    "sample_count": 10,
+    "source_dataset": "09_regular12_balanced",
+    "source_points": 4050,
+    "source_edges": 24082,
+    "restarts": 260,
+    "steps": 620,
+    "base_seed": 20262507,
+    "runtime_seconds": 33.67,
+    "points_csv": "openai_square_exact_runs\\openai_stage16_exact_n64_e192_points.csv",
+    "edges_csv": "openai_square_exact_runs\\openai_stage16_exact_n64_e192_edges.csv",
+    "metadata_json": "openai_square_exact_runs\\openai_stage16_exact_n64_e192_metadata.json"
+  },
+  "description": "Exact-n induced subgraph extracted from the local Stage 16/OpenAI Blueprint dataset.",
+  "samples": [
+    {
+      "sample_index": 0,
+      "seed": 20262507,
+      "edges": 187
+    },
+    {
+      "sample_index": 1,
+      "seed": 20263516,
+      "edges": 184
+    },
+    {
+      "sample_index": 2,
+      "seed": 20264525,
+      "edges": 184
+    },
+    {
+      "sample_index": 3,
+      "seed": 20265534,
+      "edges": 184
+    },
+    {
+      "sample_index": 4,
+      "seed": 20266543,
+      "edges": 184
+    },
+    {
+      "sample_index": 5,
+      "seed": 20267552,
+      "edges": 192
+    },
+    {
+      "sample_index": 6,
+      "seed": 20268561,
+      "edges": 183
+    },
+    {
+      "sample_index": 7,
+      "seed": 20269570,
+      "edges": 184
+    },
+    {
+      "sample_index": 8,
+      "seed": 20270579,
+      "edges": 187
+    },
+    {
+      "sample_index": 9,
+      "seed": 20271588,
+      "edges": 184
+    }
+  ],
+  "selected_source_ids": [
+    2,
+    6,
+    18,
+    22,
+    34,
+    38,
+    50,
+    54,
+    66,
+    70,
+    82,
+    86,
+    98,
+    102,
+    113,
+    117,
+    129,
+    133,
+    145,
+    149,
+    161,
+    165,
+    177,
+    181,
+    193,
+    197,
+    209,
+    213,
+    225,
+    229,
+    241,
+    245,
+    257,
+    261,
+    273,
+    277,
+    289,
+    293,
+    305,
+    309,
+    321,
+    325,
+    337,
+    341,
+    353,
+    357,
+    369,
+    373,
+    385,
+    389,
+    401,
+    405,
+    417,
+    421,
+    433,
+    437,
+    449,
+    453,
+    465,
+    469,
+    481,
+    485,
+    497,
+    501
+  ]
+}

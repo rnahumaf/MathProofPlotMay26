@@ -144,12 +144,26 @@ http://127.0.0.1:8765/interactive_graph_styler/index.html
 O app permite escolher o dataset, alterar fundo, linha, alpha, densidade, pontos
 e exportar PNG. O preset Blueprint e o padrao.
 
+## Comparacao Em Quadrados
+
+A comparacao entre grade simples, OpenAI/Stage 16, Erdos classico, UCCS e
+maximo provado fica em:
+
+[square_method_comparison/README.md](square_method_comparison/README.md)
+
+Ela usa quadrados `n = m^2`, de `m=4` ate `m=20`, porque isso facilita comparar
+visualmente as abordagens em tamanhos intuitivos. A coluna OpenAI combina
+amostras Stage 16 completas quando elas ja existem naquele tamanho e subgrafos
+induzidos exact-n extraidos do dataset Blueprint `09_regular12_balanced` nos
+demais casos.
+
 ## Mapa Do Repositorio
 
 | Area | Arquivos | Papel |
 | --- | --- | --- |
 | Galeria final | `build_blueprint_symmetric_gallery.py`, `final_blueprint_symmetric_variations/` | Experimento simetrico final em Blueprint. |
 | Editor | `interactive_graph_styler/` | Ajuste visual e exportacao de PNG sem rerodar Sage. |
+| Comparacao quadrada | `build_openai_square_exact_runs.py`, `build_square_method_comparison.py`, `square_method_comparison/` | Comparacao `n=m^2` entre grade, OpenAI, Erdos, UCCS e maximos provados conhecidos. |
 | Motor Stage 16 | `stage16_class_fiber_cm*.py` | Implementacao finita mais alinhada com a prova. |
 | Variacoes anteriores | `final_geometric_variations/`, `symmetric_variation_search/` | Experimentos usados para chegar a galeria final. |
 | Busca pequena | `search_best_leq32_unit_graph.py`, `best_leq32_search/` | Exercicio com ate 32 pontos. |
