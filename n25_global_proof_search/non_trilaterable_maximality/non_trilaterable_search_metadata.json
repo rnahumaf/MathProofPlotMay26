@@ -1,0 +1,9 @@
+{
+  "runs": 500,
+  "steps": 180,
+  "workers": 15,
+  "logical_processors": 16,
+  "best_edge_count": 80,
+  "runs_over_70": 500,
+  "interpretation": "Heuristic search for denser graphs that pass exact filters but avoid trilateration."
+}

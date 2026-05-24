@@ -1,0 +1,19 @@
+{
+  "seed": 24554413,
+  "success": true,
+  "status": 1,
+  "cost": 5.546678239835239e-32,
+  "max_abs_edge_squared_error": 1.1102230246251565e-16,
+  "rms_edge_squared_error": 6.531979461927319e-17,
+  "nfev": 21,
+  "runtime_seconds": 0.027,
+  "total_wall_seconds": 1.322,
+  "workers": 15,
+  "source_edges_csv": "n25_global_proof_search\\rigid_forced_edge_discovery\\audit_forced_2_3_witness_augmented_remap_edges.csv",
+  "source_edge_count": 26,
+  "all_unit_pairs_at_1e-6": 42,
+  "min_pair_distance": 0.0,
+  "collision_pairs_at_1e-6": 9,
+  "has_25_distinct_points_at_1e-6": false,
+  "interpretation": "A near-zero max_abs_edge_squared_error would be a real geometric counterexample. It must also have has_25_distinct_points_at_1e-6=true. A positive residual is only numerical evidence of non-embeddability, not a proof."
+}

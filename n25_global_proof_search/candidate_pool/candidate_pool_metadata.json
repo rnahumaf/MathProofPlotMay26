@@ -1,0 +1,10 @@
+{
+  "n": 25,
+  "min_edges": 71,
+  "require_local_circle": true,
+  "raw_candidate_count": 600,
+  "isomorphism_class_count": 600,
+  "max_edge_count": 84,
+  "logical_processors": 16,
+  "note": "These are abstract graph candidates, not confirmed geometric embeddings."
+}

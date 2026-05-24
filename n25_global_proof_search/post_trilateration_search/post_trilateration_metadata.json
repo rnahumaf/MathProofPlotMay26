@@ -1,0 +1,12 @@
+{
+  "runs": 1000,
+  "steps": 260,
+  "workers": 15,
+  "logical_processors": 16,
+  "best_edge_count": 82,
+  "survivor_count": 0,
+  "status_counts": {
+    "eliminated": 1000
+  },
+  "interpretation": "A survivor is a 71+ candidate passing the current exact filters that was not eliminated by finite trilateration."
+}

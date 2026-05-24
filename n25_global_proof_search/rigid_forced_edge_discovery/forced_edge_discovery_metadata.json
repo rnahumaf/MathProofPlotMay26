@@ -1,0 +1,9 @@
+{
+  "source_edges": "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\MathProofPlotMay26\\n25_global_proof_search\\non_trilaterable_maximality\\non_trilaterable_search_best_edges.csv",
+  "subsets_tested": 40,
+  "forced_unit_candidate_count": 0,
+  "min_pair_distance": 1e-06,
+  "collapsed_embedding_rejections": 472,
+  "workers": 15,
+  "interpretation": "Numerical discovery only, using non-collapsed sampled embeddings. A forced edge becomes rigorous only after the witness subcore is certified algebraically or by intervals."
+}

@@ -1,0 +1,10 @@
+{
+  "source_edges": "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\MathProofPlotMay26\\n25_global_proof_search\\non_trilaterable_maximality\\non_trilaterable_search_best_edges.csv",
+  "initial_edge_count": 80,
+  "core_edge_count": 57,
+  "core_vertex_count": 25,
+  "threshold": 0.35,
+  "runs_per_score": 2,
+  "max_nfev": 3000,
+  "interpretation": "Numerical heuristic only; a small core needs exact or interval certification."
+}

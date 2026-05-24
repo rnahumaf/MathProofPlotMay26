@@ -1,0 +1,13 @@
+{
+  "source": "forced_20_25_witness_subgraph_remap_edges",
+  "n": 12,
+  "edge_count": 25,
+  "label_count": 25,
+  "derived_label_count": 0,
+  "linear_label_count": 25,
+  "linear_derived_label_count": 0,
+  "eliminated": false,
+  "certificate": null,
+  "derivations": [],
+  "linear_derivations": []
+}

@@ -1,0 +1,7 @@
+{
+  "classes_tested": 500,
+  "workers": 15,
+  "eliminated_count": 350,
+  "passed_count": 150,
+  "interpretation": "Exact squared-distance propagation plus planar Cayley-Menger checks."
+}

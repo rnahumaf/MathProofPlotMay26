@@ -1,0 +1,52 @@
+{
+  "claim": "Maximum 25-point induced subgraph inside this finite UCCS candidate graph.",
+  "scope": "finite_uccs_candidate_universe_only",
+  "top_candidates": 180,
+  "bounds_padding": 0.35,
+  "runtime_seconds": 177.949,
+  "solver": "scipy.optimize.milp / HiGHS",
+  "local_compute": {
+    "logical_processors": 16,
+    "threads_requested": 15,
+    "gpu_note": "RTX GPU is not used by SciPy/HiGHS MILP; this workload is CPU/RAM-bound."
+  },
+  "solver_result": {
+    "status": 0,
+    "success": true,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "node_count": 180,
+    "candidate_edge_count": 641,
+    "selected_vertex_count": 25,
+    "optimal_edge_count": 70,
+    "mip_gap": 0.0,
+    "threads_requested": 15,
+    "selected_vertices_1_based": [
+      9,
+      32,
+      40,
+      44,
+      49,
+      61,
+      66,
+      67,
+      68,
+      74,
+      86,
+      89,
+      95,
+      98,
+      99,
+      105,
+      112,
+      113,
+      119,
+      122,
+      130,
+      135,
+      157,
+      171,
+      174
+    ]
+  },
+  "interpretation": "If success is true, mip_gap is 0, and optimal_edge_count is 70, then no 25-point subset of this finite UCCS candidate graph has 71 or more unit-distance pairs."
+}

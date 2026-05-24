@@ -1,0 +1,9 @@
+{
+  "classes_tested": 600,
+  "eliminated_count": 600,
+  "passed_count": 0,
+  "workers": 15,
+  "logical_processors": 16,
+  "max_nodes_per_component": 200000,
+  "interpretation": "Exact necessary filter on edge-connected triangle components. Eliminated classes cannot be unit-distance graphs; passed classes still need continuous geometric elimination."
+}

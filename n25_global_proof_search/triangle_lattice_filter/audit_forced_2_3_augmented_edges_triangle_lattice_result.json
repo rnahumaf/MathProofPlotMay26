@@ -1,0 +1,153 @@
+{
+  "class_id": "audit_forced_2_3_augmented_edges",
+  "edge_count": 81,
+  "triangle_count": 24,
+  "triangle_component_count": 14,
+  "largest_component_vertices": 8,
+  "eliminated": true,
+  "failure_component": 3,
+  "failure_reason": "triangle_contradiction",
+  "search_nodes": 22,
+  "components": [
+    {
+      "component_index": 1,
+      "triangle_count": 2,
+      "vertex_count": 4,
+      "internal_edge_count": 5,
+      "satisfiable": true,
+      "assigned_vertex_count": 4,
+      "search_nodes": 2,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 2,
+      "triangle_count": 2,
+      "vertex_count": 4,
+      "internal_edge_count": 5,
+      "satisfiable": true,
+      "assigned_vertex_count": 4,
+      "search_nodes": 2,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 3,
+      "triangle_count": 6,
+      "vertex_count": 8,
+      "internal_edge_count": 13,
+      "satisfiable": false,
+      "assigned_vertex_count": 6,
+      "search_nodes": 4,
+      "reason": "triangle_contradiction"
+    },
+    {
+      "component_index": 4,
+      "triangle_count": 1,
+      "vertex_count": 3,
+      "internal_edge_count": 3,
+      "satisfiable": true,
+      "assigned_vertex_count": 3,
+      "search_nodes": 1,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 5,
+      "triangle_count": 1,
+      "vertex_count": 3,
+      "internal_edge_count": 3,
+      "satisfiable": true,
+      "assigned_vertex_count": 3,
+      "search_nodes": 1,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 6,
+      "triangle_count": 1,
+      "vertex_count": 3,
+      "internal_edge_count": 3,
+      "satisfiable": true,
+      "assigned_vertex_count": 3,
+      "search_nodes": 1,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 7,
+      "triangle_count": 2,
+      "vertex_count": 4,
+      "internal_edge_count": 5,
+      "satisfiable": true,
+      "assigned_vertex_count": 4,
+      "search_nodes": 2,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 8,
+      "triangle_count": 2,
+      "vertex_count": 4,
+      "internal_edge_count": 5,
+      "satisfiable": true,
+      "assigned_vertex_count": 4,
+      "search_nodes": 2,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 9,
+      "triangle_count": 2,
+      "vertex_count": 4,
+      "internal_edge_count": 5,
+      "satisfiable": true,
+      "assigned_vertex_count": 4,
+      "search_nodes": 2,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 10,
+      "triangle_count": 1,
+      "vertex_count": 3,
+      "internal_edge_count": 3,
+      "satisfiable": true,
+      "assigned_vertex_count": 3,
+      "search_nodes": 1,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 11,
+      "triangle_count": 1,
+      "vertex_count": 3,
+      "internal_edge_count": 3,
+      "satisfiable": true,
+      "assigned_vertex_count": 3,
+      "search_nodes": 1,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 12,
+      "triangle_count": 1,
+      "vertex_count": 3,
+      "internal_edge_count": 3,
+      "satisfiable": true,
+      "assigned_vertex_count": 3,
+      "search_nodes": 1,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 13,
+      "triangle_count": 1,
+      "vertex_count": 3,
+      "internal_edge_count": 3,
+      "satisfiable": true,
+      "assigned_vertex_count": 3,
+      "search_nodes": 1,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 14,
+      "triangle_count": 1,
+      "vertex_count": 3,
+      "internal_edge_count": 3,
+      "satisfiable": true,
+      "assigned_vertex_count": 3,
+      "search_nodes": 1,
+      "reason": "satisfied"
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "status": "eliminated",
+  "seed_edge": [
+    1,
+    8
+  ],
+  "order": [
+    [
+      22,
+      1,
+      8
+    ],
+    [
+      16,
+      1,
+      22
+    ],
+    [
+      15,
+      16,
+      22
+    ],
+    [
+      12,
+      15,
+      22
+    ],
+    [
+      2,
+      12,
+      15
+    ],
+    [
+      3,
+      8,
+      12
+    ],
+    [
+      4,
+      2,
+      3
+    ],
+    [
+      19,
+      1,
+      2
+    ],
+    [
+      20,
+      1,
+      3
+    ],
+    [
+      25,
+      12,
+      19
+    ],
+    [
+      13,
+      3,
+      16
+    ],
+    [
+      17,
+      13,
+      19
+    ],
+    [
+      10,
+      1,
+      12
+    ],
+    [
+      18,
+      2,
+      8
+    ],
+    [
+      9,
+      10,
+      15
+    ],
+    [
+      23,
+      3,
+      9
+    ],
+    [
+      24,
+      4,
+      9
+    ],
+    [
+      5,
+      4,
+      22
+    ],
+    [
+      6,
+      8,
+      9
+    ],
+    [
+      7,
+      3,
+      6
+    ],
+    [
+      11,
+      5,
+      7
+    ],
+    [
+      21,
+      2,
+      5
+    ],
+    [
+      14,
+      6,
+      7
+    ]
+  ],
+  "eliminated_at_step": 7,
+  "max_width": 2,
+  "eliminations": [
+    {
+      "step": 1,
+      "vertex": 22,
+      "anchors": [
+        1,
+        8
+      ],
+      "states_in": 1,
+      "states_out": 2,
+      "failures": [],
+      "failure_count": 0
+    },
+    {
+      "step": 2,
+      "vertex": 16,
+      "anchors": [
+        1,
+        22
+      ],
+      "states_in": 2,
+      "states_out": 2,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 16,
+          "anchors": [
+            1,
+            22
+          ],
+          "candidate": [
+            "1.0",
+            "0.0"
+          ],
+          "reason": "collision_16_8"
+        },
+        {
+          "state_index": 1,
+          "vertex": 16,
+          "anchors": [
+            1,
+            22
+          ],
+          "candidate": [
+            "1.0",
+            "0.0"
+          ],
+          "reason": "collision_16_8"
+        }
+      ],
+      "failure_count": 2
+    },
+    {
+      "step": 3,
+      "vertex": 15,
+      "anchors": [
+        16,
+        22
+      ],
+      "states_in": 2,
+      "states_out": 2,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 15,
+          "anchors": [
+            16,
+            22
+          ],
+          "candidate": [
+            "-3.571835597757109319424323588454190498287e-102",
+            "0.0"
+          ],
+          "reason": "collision_15_1"
+        },
+        {
+          "state_index": 1,
+          "vertex": 15,
+          "anchors": [
+            16,
+            22
+          ],
+          "candidate": [
+            "-3.571835597757109319424323588454190498287e-102",
+            "0.0"
+          ],
+          "reason": "collision_15_1"
+        }
+      ],
+      "failure_count": 2
+    },
+    {
+      "step": 4,
+      "vertex": 12,
+      "anchors": [
+        15,
+        22
+      ],
+      "states_in": 2,
+      "states_out": 2,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 12,
+          "anchors": [
+            15,
+            22
+          ],
+          "candidate": [
+            "-0.5",
+            "0.8660254037844386467637231707529361834714"
+          ],
+          "reason": "collision_12_16"
+        },
+        {
+          "state_index": 1,
+          "vertex": 12,
+          "anchors": [
+            15,
+            22
+          ],
+          "candidate": [
+            "-0.5",
+            "-0.8660254037844386467637231707529361834714"
+          ],
+          "reason": "collision_12_16"
+        }
+      ],
+      "failure_count": 2
+    },
+    {
+      "step": 5,
+      "vertex": 2,
+      "anchors": [
+        12,
+        15
+      ],
+      "states_in": 2,
+      "states_out": 2,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 2,
+          "anchors": [
+            12,
+            15
+          ],
+          "candidate": [
+            "0.5",
+            "0.8660254037844386467637231707529361834714"
+          ],
+          "reason": "collision_2_22"
+        },
+        {
+          "state_index": 1,
+          "vertex": 2,
+          "anchors": [
+            12,
+            15
+          ],
+          "candidate": [
+            "0.5",
+            "-0.8660254037844386467637231707529361834714"
+          ],
+          "reason": "collision_2_22"
+        }
+      ],
+      "failure_count": 2
+    },
+    {
+      "step": 6,
+      "vertex": 3,
+      "anchors": [
+        8,
+        12
+      ],
+      "states_in": 2,
+      "states_out": 2,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 3,
+          "anchors": [
+            8,
+            12
+          ],
+          "candidate": [
+            "0.5",
+            "0.8660254037844386467637231707529361834714"
+          ],
+          "reason": "collision_3_22"
+        },
+        {
+          "state_index": 1,
+          "vertex": 3,
+          "anchors": [
+            8,
+            12
+          ],
+          "candidate": [
+            "0.5",
+            "-0.8660254037844386467637231707529361834714"
+          ],
+          "reason": "collision_3_22"
+        }
+      ],
+      "failure_count": 2
+    },
+    {
+      "step": 7,
+      "vertex": 4,
+      "anchors": [
+        2,
+        3
+      ],
+      "states_in": 2,
+      "states_out": 0,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 4,
+          "anchors": [
+            2,
+            3
+          ],
+          "candidate": [
+            "1.0",
+            "1.732050807568877293527446341505872366943"
+          ],
+          "reason": "collision_4_12"
+        },
+        {
+          "state_index": 1,
+          "vertex": 4,
+          "anchors": [
+            2,
+            3
+          ],
+          "candidate": [
+            "1.0",
+            "-1.732050807568877293527446341505872366943"
+          ],
+          "reason": "collision_4_12"
+        }
+      ],
+      "failure_count": 2
+    }
+  ],
+  "source": "class_0475_e79",
+  "n": 25,
+  "edge_count": 79,
+  "precision_digits": 100,
+  "tolerance": "1e-40",
+  "interpretation": "eliminated means all finite trilateration branches from the reported seed edge failed; survived means a numerically valid branch remains and needs exact/interval verification."
+}

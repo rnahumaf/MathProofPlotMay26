@@ -1,0 +1,41 @@
+{
+  "source": "forced_1_10_witness_edges",
+  "n": 25,
+  "edge_count": 25,
+  "label_count": 26,
+  "derived_label_count": 1,
+  "linear_label_count": 26,
+  "linear_derived_label_count": 1,
+  "eliminated": false,
+  "certificate": null,
+  "derivations": [
+    {
+      "source_pair": [
+        1,
+        5
+      ],
+      "source_value": 1,
+      "target_pair": [
+        4,
+        13
+      ],
+      "target_value": 3,
+      "relation": [
+        1,
+        5,
+        4,
+        13
+      ]
+    }
+  ],
+  "linear_derivations": [
+    {
+      "pair": [
+        4,
+        13
+      ],
+      "squared_distance": "3",
+      "method": "linear_opposite_distance_system"
+    }
+  ]
+}

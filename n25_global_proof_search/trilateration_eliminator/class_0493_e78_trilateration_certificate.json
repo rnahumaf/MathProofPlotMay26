@@ -1,0 +1,263 @@
+{
+  "status": "eliminated",
+  "seed_edge": [
+    1,
+    2
+  ],
+  "order": [
+    [
+      21,
+      1,
+      2
+    ],
+    [
+      22,
+      1,
+      2
+    ],
+    [
+      16,
+      1,
+      22
+    ],
+    [
+      6,
+      16,
+      21
+    ],
+    [
+      3,
+      2,
+      6
+    ],
+    [
+      11,
+      3,
+      6
+    ],
+    [
+      18,
+      1,
+      11
+    ],
+    [
+      15,
+      3,
+      16
+    ],
+    [
+      14,
+      2,
+      3
+    ],
+    [
+      12,
+      2,
+      14
+    ],
+    [
+      4,
+      11,
+      12
+    ],
+    [
+      13,
+      4,
+      11
+    ],
+    [
+      17,
+      12,
+      16
+    ],
+    [
+      7,
+      4,
+      17
+    ],
+    [
+      9,
+      7,
+      13
+    ],
+    [
+      25,
+      2,
+      3
+    ],
+    [
+      24,
+      4,
+      6
+    ],
+    [
+      20,
+      1,
+      9
+    ],
+    [
+      19,
+      6,
+      12
+    ],
+    [
+      5,
+      11,
+      13
+    ],
+    [
+      8,
+      5,
+      7
+    ],
+    [
+      23,
+      3,
+      5
+    ],
+    [
+      10,
+      5,
+      12
+    ]
+  ],
+  "eliminated_at_step": 4,
+  "max_width": 2,
+  "eliminations": [
+    {
+      "step": 1,
+      "vertex": 21,
+      "anchors": [
+        1,
+        2
+      ],
+      "states_in": 1,
+      "states_out": 2,
+      "failures": [],
+      "failure_count": 0
+    },
+    {
+      "step": 2,
+      "vertex": 22,
+      "anchors": [
+        1,
+        2
+      ],
+      "states_in": 2,
+      "states_out": 2,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 22,
+          "anchors": [
+            1,
+            2
+          ],
+          "candidate": [
+            "0.5",
+            "0.8660254037844386467637231707529361834714"
+          ],
+          "reason": "collision_22_21"
+        },
+        {
+          "state_index": 1,
+          "vertex": 22,
+          "anchors": [
+            1,
+            2
+          ],
+          "candidate": [
+            "0.5",
+            "-0.8660254037844386467637231707529361834714"
+          ],
+          "reason": "collision_22_21"
+        }
+      ],
+      "failure_count": 2
+    },
+    {
+      "step": 3,
+      "vertex": 16,
+      "anchors": [
+        1,
+        22
+      ],
+      "states_in": 2,
+      "states_out": 2,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 16,
+          "anchors": [
+            1,
+            22
+          ],
+          "candidate": [
+            "1.0",
+            "0.0"
+          ],
+          "reason": "collision_16_2"
+        },
+        {
+          "state_index": 1,
+          "vertex": 16,
+          "anchors": [
+            1,
+            22
+          ],
+          "candidate": [
+            "1.0",
+            "0.0"
+          ],
+          "reason": "collision_16_2"
+        }
+      ],
+      "failure_count": 2
+    },
+    {
+      "step": 4,
+      "vertex": 6,
+      "anchors": [
+        16,
+        21
+      ],
+      "states_in": 2,
+      "states_out": 0,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 6,
+          "anchors": [
+            16,
+            21
+          ],
+          "candidate": [
+            "-3.571835597757109319424323588454190498287e-102",
+            "0.0"
+          ],
+          "reason": "collision_6_1"
+        },
+        {
+          "state_index": 1,
+          "vertex": 6,
+          "anchors": [
+            16,
+            21
+          ],
+          "candidate": [
+            "-3.571835597757109319424323588454190498287e-102",
+            "0.0"
+          ],
+          "reason": "collision_6_1"
+        }
+      ],
+      "failure_count": 2
+    }
+  ],
+  "source": "class_0493_e78",
+  "n": 25,
+  "edge_count": 78,
+  "precision_digits": 100,
+  "tolerance": "1e-40",
+  "interpretation": "eliminated means all finite trilateration branches from the reported seed edge failed; survived means a numerically valid branch remains and needs exact/interval verification."
+}

@@ -1,0 +1,58 @@
+{
+  "source_edges": "n25_global_proof_search\\rigid_forced_edge_discovery\\audit_forced_2_3_witness_edges.csv",
+  "original_vertices": [
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    12,
+    14,
+    17,
+    19,
+    21,
+    23
+  ],
+  "n": 12,
+  "edge_count": 25,
+  "node_connectivity": 3,
+  "edge_connectivity": 3,
+  "is_3_connected": true,
+  "redundant_rigidity": {
+    "max_rank": 21,
+    "full_rank": 21,
+    "is_rigid": true,
+    "is_redundantly_rigid": true,
+    "redundancy_failures": []
+  },
+  "generic_global_rigidity_by_hendrickson_jackson_jordan": true,
+  "unit_realization_best_max_abs": 2.220446049250313e-16,
+  "target_pair": [
+    2,
+    3
+  ],
+  "target_distance_squared_in_sample": 1.0,
+  "stress_matrix": {
+    "stress_space_dimension": 4,
+    "psd_stress_found": false,
+    "target_stress_rank": 9,
+    "min_eigenvalue": -0.039061134659950765,
+    "positive_rank": 3,
+    "eigenvalues": [
+      -0.039061134659950765,
+      -0.03575807360657428,
+      -0.015342695250980537,
+      -1.0143956587805129e-17,
+      -7.229289053324547e-18,
+      -6.550613811174846e-18,
+      -2.020206228291694e-18,
+      1.2802637387734969e-18,
+      6.8142739163599606e-18,
+      0.015220228946571887,
+      0.03120688559479315,
+      0.04373478897614052
+    ]
+  },
+  "interpretation": "Generic global rigidity is a combinatorial theorem for generic frameworks. The sampled unit framework is special, so this is a strong proof-search certificate but not yet a standalone proof that every unit realization forces the target pair."
+}

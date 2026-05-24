@@ -1,0 +1,67 @@
+{
+  "source": "forced_1_8_witness_edges",
+  "n": 25,
+  "edge_count": 25,
+  "label_count": 27,
+  "derived_label_count": 2,
+  "linear_label_count": 27,
+  "linear_derived_label_count": 2,
+  "eliminated": false,
+  "certificate": null,
+  "derivations": [
+    {
+      "source_pair": [
+        9,
+        22
+      ],
+      "source_value": 1,
+      "target_pair": [
+        1,
+        20
+      ],
+      "target_value": 3,
+      "relation": [
+        1,
+        20,
+        9,
+        22
+      ]
+    },
+    {
+      "source_pair": [
+        10,
+        15
+      ],
+      "source_value": 1,
+      "target_pair": [
+        6,
+        13
+      ],
+      "target_value": 3,
+      "relation": [
+        6,
+        13,
+        10,
+        15
+      ]
+    }
+  ],
+  "linear_derivations": [
+    {
+      "pair": [
+        1,
+        20
+      ],
+      "squared_distance": "3",
+      "method": "linear_opposite_distance_system"
+    },
+    {
+      "pair": [
+        6,
+        13
+      ],
+      "squared_distance": "3",
+      "method": "linear_opposite_distance_system"
+    }
+  ]
+}

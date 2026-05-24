@@ -1,0 +1,263 @@
+{
+  "status": "eliminated",
+  "seed_edge": [
+    2,
+    4
+  ],
+  "order": [
+    [
+      8,
+      2,
+      4
+    ],
+    [
+      9,
+      2,
+      4
+    ],
+    [
+      10,
+      2,
+      8
+    ],
+    [
+      1,
+      9,
+      10
+    ],
+    [
+      7,
+      1,
+      4
+    ],
+    [
+      5,
+      1,
+      7
+    ],
+    [
+      6,
+      7,
+      10
+    ],
+    [
+      16,
+      6,
+      8
+    ],
+    [
+      22,
+      4,
+      6
+    ],
+    [
+      23,
+      5,
+      8
+    ],
+    [
+      3,
+      1,
+      22
+    ],
+    [
+      18,
+      5,
+      10
+    ],
+    [
+      19,
+      3,
+      9
+    ],
+    [
+      17,
+      4,
+      7
+    ],
+    [
+      24,
+      4,
+      5
+    ],
+    [
+      20,
+      1,
+      3
+    ],
+    [
+      11,
+      2,
+      18
+    ],
+    [
+      15,
+      7,
+      8
+    ],
+    [
+      21,
+      6,
+      9
+    ],
+    [
+      12,
+      1,
+      8
+    ],
+    [
+      13,
+      5,
+      6
+    ],
+    [
+      14,
+      12,
+      13
+    ],
+    [
+      25,
+      2,
+      3
+    ]
+  ],
+  "eliminated_at_step": 4,
+  "max_width": 2,
+  "eliminations": [
+    {
+      "step": 1,
+      "vertex": 8,
+      "anchors": [
+        2,
+        4
+      ],
+      "states_in": 1,
+      "states_out": 2,
+      "failures": [],
+      "failure_count": 0
+    },
+    {
+      "step": 2,
+      "vertex": 9,
+      "anchors": [
+        2,
+        4
+      ],
+      "states_in": 2,
+      "states_out": 2,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 9,
+          "anchors": [
+            2,
+            4
+          ],
+          "candidate": [
+            "0.5",
+            "0.8660254037844386467637231707529361834714"
+          ],
+          "reason": "collision_9_8"
+        },
+        {
+          "state_index": 1,
+          "vertex": 9,
+          "anchors": [
+            2,
+            4
+          ],
+          "candidate": [
+            "0.5",
+            "-0.8660254037844386467637231707529361834714"
+          ],
+          "reason": "collision_9_8"
+        }
+      ],
+      "failure_count": 2
+    },
+    {
+      "step": 3,
+      "vertex": 10,
+      "anchors": [
+        2,
+        8
+      ],
+      "states_in": 2,
+      "states_out": 2,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 10,
+          "anchors": [
+            2,
+            8
+          ],
+          "candidate": [
+            "1.0",
+            "0.0"
+          ],
+          "reason": "collision_10_4"
+        },
+        {
+          "state_index": 1,
+          "vertex": 10,
+          "anchors": [
+            2,
+            8
+          ],
+          "candidate": [
+            "1.0",
+            "0.0"
+          ],
+          "reason": "collision_10_4"
+        }
+      ],
+      "failure_count": 2
+    },
+    {
+      "step": 4,
+      "vertex": 1,
+      "anchors": [
+        9,
+        10
+      ],
+      "states_in": 2,
+      "states_out": 0,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 1,
+          "anchors": [
+            9,
+            10
+          ],
+          "candidate": [
+            "-3.571835597757109319424323588454190498287e-102",
+            "0.0"
+          ],
+          "reason": "collision_1_2"
+        },
+        {
+          "state_index": 1,
+          "vertex": 1,
+          "anchors": [
+            9,
+            10
+          ],
+          "candidate": [
+            "-3.571835597757109319424323588454190498287e-102",
+            "0.0"
+          ],
+          "reason": "collision_1_2"
+        }
+      ],
+      "failure_count": 2
+    }
+  ],
+  "source": "class_0229_e80",
+  "n": 25,
+  "edge_count": 80,
+  "precision_digits": 100,
+  "tolerance": "1e-40",
+  "interpretation": "eliminated means all finite trilateration branches from the reported seed edge failed; survived means a numerically valid branch remains and needs exact/interval verification."
+}

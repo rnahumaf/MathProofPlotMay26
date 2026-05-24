@@ -1,0 +1,10 @@
+{
+  "runs": 1000,
+  "steps": 320,
+  "workers": 15,
+  "logical_processors": 16,
+  "max_nodes_per_triangle_component": 100000,
+  "best_edge_count": 82,
+  "runs_with_71_or_more": 1000,
+  "interpretation": "Heuristic search under exact necessary filters. A 71+ result would need continuous geometry checking; absence of 71+ is evidence, not a universal proof."
+}

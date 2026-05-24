@@ -1,0 +1,14 @@
+{
+  "classes_tested": 20,
+  "runs_per_class": 30,
+  "workers": 15,
+  "logical_processors": 16,
+  "best_overall": {
+    "class_id": 14,
+    "edge_count": 83,
+    "max_abs_edge_squared_error": 0.6277913231147276,
+    "rms_edge_squared_error": 0.2755749476823354,
+    "seed": 35517314
+  },
+  "interpretation": "Numerical filter only; positive residual is not a proof of non-embeddability."
+}

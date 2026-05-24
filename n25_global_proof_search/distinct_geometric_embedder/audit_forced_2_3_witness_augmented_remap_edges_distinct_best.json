@@ -1,0 +1,18 @@
+{
+  "seed": 30838153,
+  "success": true,
+  "status": 3,
+  "cost": 5.4999999665739097e-08,
+  "max_abs_edge_squared_error": 6.196643198563834e-10,
+  "rms_edge_squared_error": 2.8280621320373695e-10,
+  "nfev": 62,
+  "runtime_seconds": 0.159,
+  "min_pair_distance": 7.648228761235532e-11,
+  "collision_pairs_at_1e-6": 11,
+  "has_distinct_points_at_1e-6": false,
+  "source_edges_csv": "n25_global_proof_search\\rigid_forced_edge_discovery\\audit_forced_2_3_witness_augmented_remap_edges.csv",
+  "source_edge_count": 26,
+  "workers": 15,
+  "min_separation_requested": 0.001,
+  "collision_weight": 100.0
+}

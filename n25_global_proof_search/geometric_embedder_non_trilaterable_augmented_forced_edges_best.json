@@ -1,0 +1,19 @@
+{
+  "seed": 31571256,
+  "success": true,
+  "status": 2,
+  "cost": 2.6624313007234424,
+  "max_abs_edge_squared_error": 0.6288350627760184,
+  "rms_edge_squared_error": 0.25639626452487024,
+  "nfev": 39,
+  "runtime_seconds": 0.369,
+  "total_wall_seconds": 23.523,
+  "workers": 15,
+  "source_edges_csv": "n25_global_proof_search\\non_trilaterable_maximality\\non_trilaterable_augmented_forced_edges.csv",
+  "source_edge_count": 81,
+  "all_unit_pairs_at_1e-6": 1,
+  "min_pair_distance": 0.012826378907253641,
+  "collision_pairs_at_1e-6": 0,
+  "has_25_distinct_points_at_1e-6": true,
+  "interpretation": "A near-zero max_abs_edge_squared_error would be a real geometric counterexample. It must also have has_25_distinct_points_at_1e-6=true. A positive residual is only numerical evidence of non-embeddability, not a proof."
+}

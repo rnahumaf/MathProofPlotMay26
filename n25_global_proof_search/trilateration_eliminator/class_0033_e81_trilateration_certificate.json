@@ -1,0 +1,263 @@
+{
+  "status": "eliminated",
+  "seed_edge": [
+    1,
+    4
+  ],
+  "order": [
+    [
+      9,
+      1,
+      4
+    ],
+    [
+      19,
+      1,
+      9
+    ],
+    [
+      15,
+      9,
+      19
+    ],
+    [
+      5,
+      4,
+      15
+    ],
+    [
+      6,
+      4,
+      5
+    ],
+    [
+      8,
+      5,
+      15
+    ],
+    [
+      21,
+      1,
+      5
+    ],
+    [
+      13,
+      6,
+      9
+    ],
+    [
+      11,
+      6,
+      13
+    ],
+    [
+      23,
+      1,
+      11
+    ],
+    [
+      10,
+      6,
+      11
+    ],
+    [
+      2,
+      1,
+      8
+    ],
+    [
+      17,
+      2,
+      8
+    ],
+    [
+      3,
+      2,
+      9
+    ],
+    [
+      7,
+      3,
+      5
+    ],
+    [
+      14,
+      5,
+      7
+    ],
+    [
+      12,
+      2,
+      11
+    ],
+    [
+      16,
+      1,
+      12
+    ],
+    [
+      20,
+      3,
+      6
+    ],
+    [
+      22,
+      3,
+      8
+    ],
+    [
+      24,
+      4,
+      7
+    ],
+    [
+      18,
+      2,
+      4
+    ],
+    [
+      25,
+      7,
+      9
+    ]
+  ],
+  "eliminated_at_step": 4,
+  "max_width": 2,
+  "eliminations": [
+    {
+      "step": 1,
+      "vertex": 9,
+      "anchors": [
+        1,
+        4
+      ],
+      "states_in": 1,
+      "states_out": 2,
+      "failures": [],
+      "failure_count": 0
+    },
+    {
+      "step": 2,
+      "vertex": 19,
+      "anchors": [
+        1,
+        9
+      ],
+      "states_in": 2,
+      "states_out": 2,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 19,
+          "anchors": [
+            1,
+            9
+          ],
+          "candidate": [
+            "1.0",
+            "0.0"
+          ],
+          "reason": "collision_19_4"
+        },
+        {
+          "state_index": 1,
+          "vertex": 19,
+          "anchors": [
+            1,
+            9
+          ],
+          "candidate": [
+            "1.0",
+            "0.0"
+          ],
+          "reason": "collision_19_4"
+        }
+      ],
+      "failure_count": 2
+    },
+    {
+      "step": 3,
+      "vertex": 15,
+      "anchors": [
+        9,
+        19
+      ],
+      "states_in": 2,
+      "states_out": 2,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 15,
+          "anchors": [
+            9,
+            19
+          ],
+          "candidate": [
+            "-3.571835597757109319424323588454190498287e-102",
+            "0.0"
+          ],
+          "reason": "collision_15_1"
+        },
+        {
+          "state_index": 1,
+          "vertex": 15,
+          "anchors": [
+            9,
+            19
+          ],
+          "candidate": [
+            "-3.571835597757109319424323588454190498287e-102",
+            "0.0"
+          ],
+          "reason": "collision_15_1"
+        }
+      ],
+      "failure_count": 2
+    },
+    {
+      "step": 4,
+      "vertex": 5,
+      "anchors": [
+        4,
+        15
+      ],
+      "states_in": 2,
+      "states_out": 0,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 5,
+          "anchors": [
+            4,
+            15
+          ],
+          "candidate": [
+            "0.5",
+            "0.8660254037844386467637231707529361834714"
+          ],
+          "reason": "collision_5_9"
+        },
+        {
+          "state_index": 1,
+          "vertex": 5,
+          "anchors": [
+            4,
+            15
+          ],
+          "candidate": [
+            "0.5",
+            "-0.8660254037844386467637231707529361834714"
+          ],
+          "reason": "collision_5_9"
+        }
+      ],
+      "failure_count": 2
+    }
+  ],
+  "source": "class_0033_e81",
+  "n": 25,
+  "edge_count": 81,
+  "precision_digits": 100,
+  "tolerance": "1e-40",
+  "interpretation": "eliminated means all finite trilateration branches from the reported seed edge failed; survived means a numerically valid branch remains and needs exact/interval verification."
+}

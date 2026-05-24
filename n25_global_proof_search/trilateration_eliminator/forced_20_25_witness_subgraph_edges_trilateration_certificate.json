@@ -1,0 +1,13 @@
+{
+  "status": "no_trilateration_order",
+  "seed_edge": [
+    24,
+    25
+  ],
+  "source": "forced_20_25_witness_subgraph_edges",
+  "n": 25,
+  "edge_count": 25,
+  "precision_digits": 100,
+  "tolerance": "1e-40",
+  "interpretation": "eliminated means all finite trilateration branches from the reported seed edge failed; survived means a numerically valid branch remains and needs exact/interval verification."
+}

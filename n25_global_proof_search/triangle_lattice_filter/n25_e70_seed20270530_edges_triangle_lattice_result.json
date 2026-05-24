@@ -1,0 +1,113 @@
+{
+  "class_id": "n25_e70_seed20270530_edges",
+  "edge_count": 70,
+  "triangle_count": 30,
+  "triangle_component_count": 10,
+  "largest_component_vertices": 5,
+  "eliminated": false,
+  "failure_component": "",
+  "failure_reason": "",
+  "search_nodes": 30,
+  "components": [
+    {
+      "component_index": 1,
+      "triangle_count": 3,
+      "vertex_count": 5,
+      "internal_edge_count": 7,
+      "satisfiable": true,
+      "assigned_vertex_count": 5,
+      "search_nodes": 3,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 2,
+      "triangle_count": 3,
+      "vertex_count": 5,
+      "internal_edge_count": 7,
+      "satisfiable": true,
+      "assigned_vertex_count": 5,
+      "search_nodes": 3,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 3,
+      "triangle_count": 3,
+      "vertex_count": 5,
+      "internal_edge_count": 7,
+      "satisfiable": true,
+      "assigned_vertex_count": 5,
+      "search_nodes": 3,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 4,
+      "triangle_count": 3,
+      "vertex_count": 5,
+      "internal_edge_count": 7,
+      "satisfiable": true,
+      "assigned_vertex_count": 5,
+      "search_nodes": 3,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 5,
+      "triangle_count": 3,
+      "vertex_count": 5,
+      "internal_edge_count": 7,
+      "satisfiable": true,
+      "assigned_vertex_count": 5,
+      "search_nodes": 3,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 6,
+      "triangle_count": 3,
+      "vertex_count": 5,
+      "internal_edge_count": 7,
+      "satisfiable": true,
+      "assigned_vertex_count": 5,
+      "search_nodes": 3,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 7,
+      "triangle_count": 3,
+      "vertex_count": 5,
+      "internal_edge_count": 7,
+      "satisfiable": true,
+      "assigned_vertex_count": 5,
+      "search_nodes": 3,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 8,
+      "triangle_count": 3,
+      "vertex_count": 5,
+      "internal_edge_count": 7,
+      "satisfiable": true,
+      "assigned_vertex_count": 5,
+      "search_nodes": 3,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 9,
+      "triangle_count": 3,
+      "vertex_count": 5,
+      "internal_edge_count": 7,
+      "satisfiable": true,
+      "assigned_vertex_count": 5,
+      "search_nodes": 3,
+      "reason": "satisfied"
+    },
+    {
+      "component_index": 10,
+      "triangle_count": 3,
+      "vertex_count": 5,
+      "internal_edge_count": 7,
+      "satisfiable": true,
+      "assigned_vertex_count": 5,
+      "search_nodes": 3,
+      "reason": "satisfied"
+    }
+  ]
+}

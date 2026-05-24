@@ -1,0 +1,10 @@
+{
+  "classes_tested": 500,
+  "workers": 15,
+  "status_counts": {
+    "eliminated": 500
+  },
+  "max_states": 200000,
+  "precision_digits": 100,
+  "tolerance": "1e-40"
+}

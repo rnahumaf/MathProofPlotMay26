@@ -1,0 +1,15 @@
+{
+  "classes_tested": 30,
+  "runs_per_class": 30,
+  "workers": 15,
+  "logical_processors": 16,
+  "pool": "n25_global_proof_search\\triangle_filtered_pool",
+  "best_overall": {
+    "class_id": 24,
+    "edge_count": 81,
+    "max_abs_edge_squared_error": 0.5940028359287362,
+    "rms_edge_squared_error": 0.297946745683408,
+    "seed": 46983550
+  },
+  "interpretation": "Numerical filter only; positive residual is not a proof of non-embeddability."
+}

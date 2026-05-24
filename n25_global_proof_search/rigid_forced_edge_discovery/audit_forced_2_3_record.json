@@ -1,0 +1,90 @@
+{
+  "witness": {
+    "vertices": [
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      12,
+      14,
+      17,
+      19,
+      21,
+      23
+    ],
+    "edge_count": 25,
+    "runs": 50,
+    "solved_count": 27,
+    "best_max_abs": 2.220446049250313e-16,
+    "forced_unit_candidates": [
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "mean_squared_distance": 0.9999999999999999,
+        "spread": 2.3314683517128287e-15,
+        "sample_count": 27
+      },
+      {
+        "pair": [
+          3,
+          5
+        ],
+        "mean_squared_distance": 1.0,
+        "spread": 2.4424906541753444e-15,
+        "sample_count": 27
+      },
+      {
+        "pair": [
+          3,
+          8
+        ],
+        "mean_squared_distance": 1.0000000000000004,
+        "spread": 8.43769498715119e-15,
+        "sample_count": 27
+      },
+      {
+        "pair": [
+          4,
+          19
+        ],
+        "mean_squared_distance": 0.9999999999999999,
+        "spread": 3.3306690738754696e-15,
+        "sample_count": 27
+      },
+      {
+        "pair": [
+          7,
+          19
+        ],
+        "mean_squared_distance": 1.0000000000000002,
+        "spread": 3.885780586188048e-15,
+        "sample_count": 27
+      }
+    ]
+  },
+  "forced": {
+    "pair": [
+      2,
+      3
+    ],
+    "mean_squared_distance": 0.9999999999999999,
+    "spread": 2.3314683517128287e-15,
+    "sample_count": 27
+  },
+  "augmented_check": {
+    "forced_pair": [
+      2,
+      3
+    ],
+    "augmented_edge_count": 81,
+    "triangle_lattice_eliminated": true,
+    "triangle_lattice_failure": "triangle_contradiction",
+    "trilateration_status": "eliminated",
+    "trilateration_eliminated_at_step": 3,
+    "trilateration_max_width": 2
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "status": "eliminated",
+  "seed_edge": [
+    1,
+    7
+  ],
+  "order": [
+    [
+      25,
+      1,
+      7
+    ],
+    [
+      13,
+      7,
+      25
+    ],
+    [
+      22,
+      13,
+      25
+    ],
+    [
+      9,
+      1,
+      22
+    ],
+    [
+      11,
+      13,
+      22
+    ],
+    [
+      5,
+      9,
+      11
+    ],
+    [
+      18,
+      5,
+      7
+    ],
+    [
+      15,
+      18,
+      22
+    ],
+    [
+      21,
+      5,
+      9
+    ],
+    [
+      19,
+      1,
+      15
+    ],
+    [
+      2,
+      15,
+      18
+    ],
+    [
+      8,
+      2,
+      5
+    ],
+    [
+      4,
+      2,
+      8
+    ],
+    [
+      3,
+      4,
+      11
+    ],
+    [
+      6,
+      3,
+      8
+    ],
+    [
+      12,
+      3,
+      4
+    ],
+    [
+      10,
+      3,
+      12
+    ],
+    [
+      17,
+      6,
+      8
+    ],
+    [
+      23,
+      1,
+      9
+    ],
+    [
+      14,
+      10,
+      15
+    ],
+    [
+      16,
+      5,
+      6
+    ],
+    [
+      20,
+      3,
+      4
+    ],
+    [
+      24,
+      1,
+      2
+    ]
+  ],
+  "eliminated_at_step": 4,
+  "max_width": 2,
+  "eliminations": [
+    {
+      "step": 1,
+      "vertex": 25,
+      "anchors": [
+        1,
+        7
+      ],
+      "states_in": 1,
+      "states_out": 2,
+      "failures": [],
+      "failure_count": 0
+    },
+    {
+      "step": 2,
+      "vertex": 13,
+      "anchors": [
+        7,
+        25
+      ],
+      "states_in": 2,
+      "states_out": 2,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 13,
+          "anchors": [
+            7,
+            25
+          ],
+          "candidate": [
+            "-7.143671195514218638848647176908380996574e-102",
+            "0.0"
+          ],
+          "reason": "collision_13_1"
+        },
+        {
+          "state_index": 1,
+          "vertex": 13,
+          "anchors": [
+            7,
+            25
+          ],
+          "candidate": [
+            "-7.143671195514218638848647176908380996574e-102",
+            "0.0"
+          ],
+          "reason": "collision_13_1"
+        }
+      ],
+      "failure_count": 2
+    },
+    {
+      "step": 3,
+      "vertex": 22,
+      "anchors": [
+        13,
+        25
+      ],
+      "states_in": 2,
+      "states_out": 2,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 22,
+          "anchors": [
+            13,
+            25
+          ],
+          "candidate": [
+            "1.0",
+            "0.0"
+          ],
+          "reason": "collision_22_7"
+        },
+        {
+          "state_index": 1,
+          "vertex": 22,
+          "anchors": [
+            13,
+            25
+          ],
+          "candidate": [
+            "1.0",
+            "0.0"
+          ],
+          "reason": "collision_22_7"
+        }
+      ],
+      "failure_count": 2
+    },
+    {
+      "step": 4,
+      "vertex": 9,
+      "anchors": [
+        1,
+        22
+      ],
+      "states_in": 2,
+      "states_out": 0,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 9,
+          "anchors": [
+            1,
+            22
+          ],
+          "candidate": [
+            "0.5",
+            "0.8660254037844386467637231707529361834714"
+          ],
+          "reason": "collision_9_25"
+        },
+        {
+          "state_index": 1,
+          "vertex": 9,
+          "anchors": [
+            1,
+            22
+          ],
+          "candidate": [
+            "0.5",
+            "-0.8660254037844386467637231707529361834714"
+          ],
+          "reason": "collision_9_25"
+        }
+      ],
+      "failure_count": 2
+    }
+  ],
+  "source": "class_0212_e80",
+  "n": 25,
+  "edge_count": 80,
+  "precision_digits": 100,
+  "tolerance": "1e-40",
+  "interpretation": "eliminated means all finite trilateration branches from the reported seed edge failed; survived means a numerically valid branch remains and needs exact/interval verification."
+}

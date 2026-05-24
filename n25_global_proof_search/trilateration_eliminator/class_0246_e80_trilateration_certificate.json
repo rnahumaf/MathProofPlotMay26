@@ -1,0 +1,263 @@
+{
+  "status": "eliminated",
+  "seed_edge": [
+    1,
+    16
+  ],
+  "order": [
+    [
+      17,
+      1,
+      16
+    ],
+    [
+      25,
+      1,
+      17
+    ],
+    [
+      18,
+      1,
+      25
+    ],
+    [
+      3,
+      16,
+      18
+    ],
+    [
+      5,
+      3,
+      16
+    ],
+    [
+      2,
+      5,
+      25
+    ],
+    [
+      4,
+      5,
+      18
+    ],
+    [
+      11,
+      2,
+      4
+    ],
+    [
+      12,
+      4,
+      5
+    ],
+    [
+      8,
+      3,
+      12
+    ],
+    [
+      9,
+      8,
+      11
+    ],
+    [
+      13,
+      3,
+      11
+    ],
+    [
+      6,
+      2,
+      13
+    ],
+    [
+      21,
+      2,
+      6
+    ],
+    [
+      20,
+      1,
+      4
+    ],
+    [
+      15,
+      2,
+      5
+    ],
+    [
+      19,
+      3,
+      17
+    ],
+    [
+      10,
+      6,
+      12
+    ],
+    [
+      14,
+      9,
+      10
+    ],
+    [
+      22,
+      10,
+      14
+    ],
+    [
+      7,
+      3,
+      8
+    ],
+    [
+      23,
+      2,
+      6
+    ],
+    [
+      24,
+      1,
+      7
+    ]
+  ],
+  "eliminated_at_step": 4,
+  "max_width": 2,
+  "eliminations": [
+    {
+      "step": 1,
+      "vertex": 17,
+      "anchors": [
+        1,
+        16
+      ],
+      "states_in": 1,
+      "states_out": 2,
+      "failures": [],
+      "failure_count": 0
+    },
+    {
+      "step": 2,
+      "vertex": 25,
+      "anchors": [
+        1,
+        17
+      ],
+      "states_in": 2,
+      "states_out": 2,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 25,
+          "anchors": [
+            1,
+            17
+          ],
+          "candidate": [
+            "1.0",
+            "0.0"
+          ],
+          "reason": "collision_25_16"
+        },
+        {
+          "state_index": 1,
+          "vertex": 25,
+          "anchors": [
+            1,
+            17
+          ],
+          "candidate": [
+            "1.0",
+            "0.0"
+          ],
+          "reason": "collision_25_16"
+        }
+      ],
+      "failure_count": 2
+    },
+    {
+      "step": 3,
+      "vertex": 18,
+      "anchors": [
+        1,
+        25
+      ],
+      "states_in": 2,
+      "states_out": 2,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 18,
+          "anchors": [
+            1,
+            25
+          ],
+          "candidate": [
+            "0.5",
+            "0.8660254037844386467637231707529361834714"
+          ],
+          "reason": "collision_18_17"
+        },
+        {
+          "state_index": 1,
+          "vertex": 18,
+          "anchors": [
+            1,
+            25
+          ],
+          "candidate": [
+            "0.5",
+            "-0.8660254037844386467637231707529361834714"
+          ],
+          "reason": "collision_18_17"
+        }
+      ],
+      "failure_count": 2
+    },
+    {
+      "step": 4,
+      "vertex": 3,
+      "anchors": [
+        16,
+        18
+      ],
+      "states_in": 2,
+      "states_out": 0,
+      "failures": [
+        {
+          "state_index": 0,
+          "vertex": 3,
+          "anchors": [
+            16,
+            18
+          ],
+          "candidate": [
+            "-7.143671195514218638848647176908380996574e-102",
+            "-3.571835597757109319424323588454190498287e-102"
+          ],
+          "reason": "collision_3_1"
+        },
+        {
+          "state_index": 1,
+          "vertex": 3,
+          "anchors": [
+            16,
+            18
+          ],
+          "candidate": [
+            "-7.143671195514218638848647176908380996574e-102",
+            "3.571835597757109319424323588454190498287e-102"
+          ],
+          "reason": "collision_3_1"
+        }
+      ],
+      "failure_count": 2
+    }
+  ],
+  "source": "class_0246_e80",
+  "n": 25,
+  "edge_count": 80,
+  "precision_digits": 100,
+  "tolerance": "1e-40",
+  "interpretation": "eliminated means all finite trilateration branches from the reported seed edge failed; survived means a numerically valid branch remains and needs exact/interval verification."
+}

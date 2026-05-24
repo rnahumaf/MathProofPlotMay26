@@ -1,0 +1,7 @@
+{
+  "candidate_count": 51,
+  "closure_count": 51,
+  "rigid_witness_count": 51,
+  "closure_and_global_elimination_count": 51,
+  "interpretation": "Numerical rigidity closure; targets still need exact/interval certification."
+}

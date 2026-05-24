@@ -1,0 +1,13 @@
+{
+  "n": 25,
+  "runs": 500,
+  "steps": 260,
+  "min_edges": 71,
+  "max_nodes_per_triangle_component": 100000,
+  "raw_candidate_count": 500,
+  "isomorphism_class_count": 500,
+  "max_edge_count": 82,
+  "workers": 15,
+  "logical_processors": 16,
+  "note": "Candidates pass local graph filters and exact triangular-lattice consistency; they are not confirmed geometric embeddings."
+}
