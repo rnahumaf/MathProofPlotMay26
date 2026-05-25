@@ -1,13 +1,13 @@
 {
-  "source_edges": "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\MathProofPlotMay26\\n25_global_proof_search\\non_trilaterable_maximality\\non_trilaterable_search_best_edges.csv",
+  "source_edges": "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\unit-distance-problem\\n25_global_proof_search\\non_trilaterable_maximality\\non_trilaterable_search_best_edges.csv",
   "subsets_tested": 24,
   "workers": 15,
   "top_target_edge_files": [
-    "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\MathProofPlotMay26\\n25_global_proof_search\\collision_forced_subcore_audit\\target_subcore_015_edges.csv",
-    "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\MathProofPlotMay26\\n25_global_proof_search\\collision_forced_subcore_audit\\target_subcore_002_edges.csv",
-    "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\MathProofPlotMay26\\n25_global_proof_search\\collision_forced_subcore_audit\\target_subcore_009_edges.csv",
-    "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\MathProofPlotMay26\\n25_global_proof_search\\collision_forced_subcore_audit\\target_subcore_014_edges.csv",
-    "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\MathProofPlotMay26\\n25_global_proof_search\\collision_forced_subcore_audit\\target_subcore_012_edges.csv"
+    "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\unit-distance-problem\\n25_global_proof_search\\collision_forced_subcore_audit\\target_subcore_015_edges.csv",
+    "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\unit-distance-problem\\n25_global_proof_search\\collision_forced_subcore_audit\\target_subcore_002_edges.csv",
+    "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\unit-distance-problem\\n25_global_proof_search\\collision_forced_subcore_audit\\target_subcore_009_edges.csv",
+    "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\unit-distance-problem\\n25_global_proof_search\\collision_forced_subcore_audit\\target_subcore_014_edges.csv",
+    "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\unit-distance-problem\\n25_global_proof_search\\collision_forced_subcore_audit\\target_subcore_012_edges.csv"
   ],
   "interpretation": "Numerical proof-search output. Stable collision pairs are not a proof; they identify small subcores that should be attacked next by interval or algebraic distinctness certificates."
 }

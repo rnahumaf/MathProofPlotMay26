@@ -1,5 +1,5 @@
 {
-  "source_edges": "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\MathProofPlotMay26\\n25_global_proof_search\\non_trilaterable_maximality\\non_trilaterable_search_best_edges.csv",
+  "source_edges": "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\unit-distance-problem\\n25_global_proof_search\\non_trilaterable_maximality\\non_trilaterable_search_best_edges.csv",
   "subsets_tested": 40,
   "forced_unit_candidate_count": 0,
   "min_pair_distance": 1e-06,

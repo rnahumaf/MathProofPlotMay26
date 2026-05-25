@@ -14,6 +14,6 @@ construcoes finitas densas de distancias unitarias.
 ## Reproducao
 
 ```powershell
-cd "C:\Users\rnahu\OneDrive\Docs pessoais\Documents\GitHub\MathProofPlotMay26\02_erdos_classical_exploration"
+cd "C:\Users\rnahu\OneDrive\Docs pessoais\Documents\GitHub\unit-distance-problem\02_erdos_classical_exploration"
 python .\unit_distance_projection_vs_grid.py
 ```

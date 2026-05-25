@@ -14,7 +14,7 @@ pequenas auxiliares.
 ## Reproducao
 
 ```powershell
-cd "C:\Users\rnahu\OneDrive\Docs pessoais\Documents\GitHub\MathProofPlotMay26\04_max_proven_to_n21"
+cd "C:\Users\rnahu\OneDrive\Docs pessoais\Documents\GitHub\unit-distance-problem\04_max_proven_to_n21"
 python .\build_square_method_comparison.py
 python .\search_best_leq32_unit_graph.py
 ```

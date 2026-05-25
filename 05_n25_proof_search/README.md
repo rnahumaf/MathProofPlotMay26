@@ -13,6 +13,6 @@ distancia 1 e em filtros para eliminar configuracoes com `71+` pares.
 ## Reproducao
 
 ```powershell
-cd "C:\Users\rnahu\OneDrive\Docs pessoais\Documents\GitHub\MathProofPlotMay26\05_n25_proof_search"
+cd "C:\Users\rnahu\OneDrive\Docs pessoais\Documents\GitHub\unit-distance-problem\05_n25_proof_search"
 python .\n25_max70_investigation\investigate_n25_max70.py --exact-lower-bound
 ```

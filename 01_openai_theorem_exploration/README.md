@@ -18,7 +18,7 @@ Os scripts Sage devem rodar a partir desta pasta no WSL Ubuntu com o ambiente
 Conda `sage`:
 
 ```bash
-cd "/mnt/c/Users/rnahu/OneDrive/Docs pessoais/Documents/GitHub/MathProofPlotMay26/01_openai_theorem_exploration"
+cd "/mnt/c/Users/rnahu/OneDrive/Docs pessoais/Documents/GitHub/unit-distance-problem/01_openai_theorem_exploration"
 source ~/miniforge3/etc/profile.d/conda.sh
 conda activate sage
 python build_blueprint_symmetric_gallery.py
@@ -28,6 +28,6 @@ python build_final_proof_sequence.py
 Depois de regenerar a galeria Blueprint:
 
 ```powershell
-cd "C:\Users\rnahu\OneDrive\Docs pessoais\Documents\GitHub\MathProofPlotMay26\01_openai_theorem_exploration"
+cd "C:\Users\rnahu\OneDrive\Docs pessoais\Documents\GitHub\unit-distance-problem\01_openai_theorem_exploration"
 python .\interactive_graph_styler\build_data.py
 ```

@@ -9,7 +9,7 @@
   "runtime_seconds": 0.464,
   "total_wall_seconds": 6.164,
   "workers": 15,
-  "source_edges_csv": "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\MathProofPlotMay26\\n25_global_proof_search\\local_circle_relaxation_heuristic_best_edges.csv",
+  "source_edges_csv": "C:\\Users\\rnahu\\OneDrive\\Docs pessoais\\Documents\\GitHub\\unit-distance-problem\\n25_global_proof_search\\local_circle_relaxation_heuristic_best_edges.csv",
   "source_edge_count": 84,
   "all_unit_pairs_at_1e-6": 1,
   "min_pair_distance": 0.009669957623896034,

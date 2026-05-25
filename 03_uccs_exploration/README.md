@@ -12,6 +12,6 @@ unitarios.
 ## Reproducao
 
 ```powershell
-cd "C:\Users\rnahu\OneDrive\Docs pessoais\Documents\GitHub\MathProofPlotMay26\03_uccs_exploration"
+cd "C:\Users\rnahu\OneDrive\Docs pessoais\Documents\GitHub\unit-distance-problem\03_uccs_exploration"
 python .\build_uccs_square_stat_runs.py
 ```

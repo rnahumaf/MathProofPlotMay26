@@ -1,4 +1,4 @@
-# MathProofPlotMay26
+# unit-distance-problem
 
 Visualizacoes e buscas finitas para o problema de distancias unitarias no
 plano. O repositorio esta dividido por linha de investigacao; cada pasta contem
